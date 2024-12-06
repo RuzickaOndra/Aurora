@@ -1,4 +1,6 @@
-Core/Src/visEffect.o: ../Core/Src/visEffect.c \
+Middlewares/Third_Party/NimaLTD_Driver/WS28XX/ws28xx.o: \
+ ../Middlewares/Third_Party/NimaLTD_Driver/WS28XX/ws28xx.c \
+ ../Middlewares/Third_Party/NimaLTD_Driver/WS28XX/ws28xx.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
  ../Core/Inc/stm32f0xx_hal_conf.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h \
@@ -28,7 +30,8 @@ Core/Src/visEffect.o: ../Core/Src/visEffect.c \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h \
- ../Core/Inc/ws2812b.h
+ ../I-CUBE-WS28XX/NimaLTD.I-CUBE-WS28XX_conf.h
+../Middlewares/Third_Party/NimaLTD_Driver/WS28XX/ws28xx.h:
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
 ../Core/Inc/stm32f0xx_hal_conf.h:
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h:
@@ -58,4 +61,4 @@ Core/Src/visEffect.o: ../Core/Src/visEffect.c \
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h:
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h:
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h:
-../Core/Inc/ws2812b.h:
+../I-CUBE-WS28XX/NimaLTD.I-CUBE-WS28XX_conf.h:

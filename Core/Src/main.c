@@ -17,13 +17,11 @@
  */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <visEffect.h>
-#include <ws2812b.h>
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "stm32f0xx_hal.h"
+#include "ws28xx.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,7 +53,8 @@ uint8_t cmd;
 uint8_t cmdli;
 uint32_t code;
 
-WS2812_Struct ws2812b;
+WS28XX_HandleTypeDef ws;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -113,22 +112,50 @@ int main(void)
   HAL_TIM_Base_Start(&htim3); // IR Receiver timer start
   __HAL_TIM_SET_COUNTER(&htim3, 0); // IR Receiver timer cnt set
 
-  visInit();
+  WS28XX_Init(&ws, &htim15, 48, TIM_CHANNEL_1, 3);
 
-  uint32_t tm = 0; // Timestamp variable
+  uint32_t tm=0, tm2 = 0; // Timestamp variable
+  uint8_t dir = 0;
   uint8_t i = 0;
+
+	WS28XX_SetPixel_RGBW_565(&ws, 0, COLOR_RGB565_BLUE, 50);
+	WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_CRIMSON, i);
+	WS28XX_SetPixel_RGBW_565(&ws, 2, COLOR_RGB565_ORANGE, 50);
+	WS28XX_Update(&ws);
+
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1) {
-		visHandle();
+
 
 		if (tm < HAL_GetTick()) {
 			tm = HAL_GetTick() + 100;
 
 			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13); //LED
+		}
+
+		if (tm2 < HAL_GetTick()) {
+					tm2 = HAL_GetTick() + 10;
+
+	     			if(dir==0)
+	     			{
+	     				WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_CRIMSON, i);
+	     				i++;
+	     				if(i>=254)
+	     					dir = 1;
+	     			}
+	     			else
+	     			{
+	     				WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_CRIMSON, i);
+	     				i--;
+	     				if(i<=1)
+	     					dir = 0;
+	     			}
+	     			WS28XX_Update(&ws);
+
 
 
 		}
@@ -254,10 +281,10 @@ static void MX_TIM15_Init(void)
   htim15.Instance = TIM15;
   htim15.Init.Prescaler = 0;
   htim15.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim15.Init.Period = 59;
+  htim15.Init.Period = 65535;
   htim15.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim15.Init.RepetitionCounter = 0;
-  htim15.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  htim15.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim15) != HAL_OK)
   {
     Error_Handler();
@@ -278,7 +305,7 @@ static void MX_TIM15_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 30;
+  sConfigOC.Pulse = 0;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
@@ -372,7 +399,6 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
@@ -389,14 +415,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PB13 */
-  GPIO_InitStruct.Pin = GPIO_PIN_13;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.Alternate = GPIO_AF2_TIM1;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);

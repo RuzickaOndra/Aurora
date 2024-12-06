@@ -1,6 +1,0 @@
-../Core/Src/visEffect.c:34:10:Wheel	16	static
-../Core/Src/visEffect.c:50:6:visRainbow	32	static
-../Core/Src/visEffect.c:71:6:visDots	40	static
-../Core/Src/visEffect.c:105:6:visHandle2	8	static
-../Core/Src/visEffect.c:120:6:visInit	16	static
-../Core/Src/visEffect.c:159:6:visHandle	8	static
