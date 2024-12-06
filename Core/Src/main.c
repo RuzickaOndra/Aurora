@@ -17,11 +17,13 @@
  */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <visEffect.h>
+#include <ws2812b.h>
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stm32f0xx_hal.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,10 +33,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define NUM_LEDS 3  // Number of LEDs in the strip
-#define LED_DATA_SIZE (NUM_LEDS * 24 + 1)  // 24 bits per LED, plus reset signal
-
-
 
 /* USER CODE END PD */
 
@@ -57,8 +55,7 @@ uint8_t cmd;
 uint8_t cmdli;
 uint32_t code;
 
-uint8_t led_data[LED_DATA_SIZE] = {0};  // LED data buffer
-
+WS2812_Struct ws2812b;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,9 +67,6 @@ static void MX_TIM3_Init(void);
 static void MX_TIM15_Init(void);
 /* USER CODE BEGIN PFP */
 // Function prototypes
-void set_led_color(uint8_t led_num, uint8_t red, uint8_t green, uint8_t blue);
-void set_all_leds(uint8_t red, uint8_t green, uint8_t blue);
-void send_led_data();
 
 /* USER CODE END PFP */
 
@@ -115,16 +109,11 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM15_Init();
   /* USER CODE BEGIN 2 */
+
   HAL_TIM_Base_Start(&htim3); // IR Receiver timer start
   __HAL_TIM_SET_COUNTER(&htim3, 0); // IR Receiver timer cnt set
 
-
-  // Set an initial LED color (e.g., red)
-     set_all_leds(255,0,0);
-     send_led_data();
-
-
-  //HAL_TIM_PWM_Start(&htim15, TIM_CHANNEL_1);
+  visInit();
 
   uint32_t tm = 0; // Timestamp variable
   uint8_t i = 0;
@@ -134,16 +123,13 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1) {
+		visHandle();
 
 		if (tm < HAL_GetTick()) {
 			tm = HAL_GetTick() + 100;
 
 			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13); //LED
 
-			set_all_leds(i, 255, 0);
-			send_led_data();
-
-			i+=10;
 
 		}
 			//printf("Data: %X, bitIndex: %d\r\n",dataBuffer, bitIndex);
@@ -254,7 +240,7 @@ static void MX_TIM15_Init(void)
 {
 
   /* USER CODE BEGIN TIM15_Init 0 */
-
+//
   /* USER CODE END TIM15_Init 0 */
 
   TIM_ClockConfigTypeDef sClockSourceConfig = {0};
@@ -263,7 +249,7 @@ static void MX_TIM15_Init(void)
   TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
 
   /* USER CODE BEGIN TIM15_Init 1 */
-
+//
   /* USER CODE END TIM15_Init 1 */
   htim15.Instance = TIM15;
   htim15.Init.Prescaler = 0;
@@ -314,7 +300,7 @@ static void MX_TIM15_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN TIM15_Init 2 */
-
+//
   /* USER CODE END TIM15_Init 2 */
   HAL_TIM_MspPostInit(&htim15);
 
@@ -496,37 +482,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     }
     __HAL_TIM_SET_COUNTER(&htim3, 0);
   }
-}
-
-
-/* Neopixel LEDS */
-// Helper to convert an RGB value into WS2812 format
-void set_led_color(uint8_t led_num, uint8_t red, uint8_t green, uint8_t blue) {
-    if (led_num >= NUM_LEDS) return;
-    uint32_t color = (green << 16) | (red << 8) | blue;
-    for (int i = 0; i < 24; i++) {
-        if (color & (1 << (23 - i))) {
-            led_data[led_num * 24 + i] = 38;  // Logic 1
-        } else {
-            led_data[led_num * 24 + i] = 19;  // Logic 0
-        }
-    }
-
-    led_data[LED_DATA_SIZE]=0; //posledni 0 z nějakeho dovudo
-}
-
-// Initialize all LEDs to a color
-void set_all_leds(uint8_t red, uint8_t green, uint8_t blue) {
-    for (int i = 0; i < NUM_LEDS; i++) {
-        set_led_color(i, red, green, blue);
-    }
-}
-
-// Send LED data using DMA
-void send_led_data() {
-    HAL_TIM_PWM_Start_DMA(&htim15, TIM_CHANNEL_1, (uint32_t *)led_data, LED_DATA_SIZE);
-    //HAL_Delay(1);  // Ensure data is latched
-    //HAL_TIM_PWM_Stop_DMA(&htim15, TIM_CHANNEL_1);
 }
 
 
