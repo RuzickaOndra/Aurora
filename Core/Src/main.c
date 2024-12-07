@@ -51,7 +51,10 @@ uint32_t tempCode;
 uint8_t bitIndex;
 uint8_t cmd;
 uint8_t cmdli;
-uint32_t code;
+volatile uint32_t code;
+volatile bool processIR = 0;
+
+uint8_t animationCode = 0;
 
 WS28XX_HandleTypeDef ws;
 
@@ -66,7 +69,12 @@ static void MX_TIM3_Init(void);
 static void MX_TIM15_Init(void);
 /* USER CODE BEGIN PFP */
 // Function prototypes
-
+void setAllBlue(void);
+void turnAllOff(void);
+void GlitteringWavesEffect(void);
+void EnchantedRippleEffect(void);
+void TwinklingGlowEffect(void);
+void CarTurnSignalEffect(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -109,20 +117,23 @@ int main(void)
   MX_TIM15_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_TIM_Base_Start(&htim3); // IR Receiver timer start
-  __HAL_TIM_SET_COUNTER(&htim3, 0); // IR Receiver timer cnt set
+	HAL_TIM_Base_Start(&htim3); // IR Receiver timer start
+	__HAL_TIM_SET_COUNTER(&htim3, 0); // IR Receiver timer cnt set
 
-  WS28XX_Init(&ws, &htim15, 48, TIM_CHANNEL_1, 3);
+	WS28XX_Init(&ws, &htim15, 48, TIM_CHANNEL_1, 3);
 
-  uint32_t tm=0, tm2 = 0; // Timestamp variable
-  uint8_t dir = 0;
-  uint8_t i = 0;
+	uint32_t tmheartbeat = 0, tm = 0; // Timestamp variable
+	bool heartbeat = 0;
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1); //heartbeat pin
 
-	WS28XX_SetPixel_RGBW_565(&ws, 0, COLOR_RGB565_BLUE, 50);
-	WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_CRIMSON, i);
+	uint8_t ledsON = 0; //Some LED should be on - enable boost
+	uint32_t tmboostON = 0; //timestamp for boost enabling
+	bool boostONswitch = 0;
+
+	WS28XX_SetPixel_RGBW_565(&ws, 0, COLOR_RGB565_BLUE, 50); //default init values
+	WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_CRIMSON, 50);
 	WS28XX_SetPixel_RGBW_565(&ws, 2, COLOR_RGB565_ORANGE, 50);
 	WS28XX_Update(&ws);
-
 
   /* USER CODE END 2 */
 
@@ -130,37 +141,101 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 	while (1) {
 
+		if (tmheartbeat < HAL_GetTick()) { //heartbeat LED
+			if (heartbeat)
+				tmheartbeat = HAL_GetTick() + 950;
+			else
+				tmheartbeat = HAL_GetTick() + 50;
 
-		if (tm < HAL_GetTick()) {
-			tm = HAL_GetTick() + 100;
+			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13); //heartbeat LED
 
-			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13); //LED
+			heartbeat = !heartbeat;
 		}
 
-		if (tm2 < HAL_GetTick()) {
-					tm2 = HAL_GetTick() + 10;
+		if (processIR == 1) { //Command received from IR decoding
+			processIR = 0; //reset flag
 
-	     			if(dir==0)
-	     			{
-	     				WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_CRIMSON, i);
-	     				i++;
-	     				if(i>=254)
-	     					dir = 1;
-	     			}
-	     			else
-	     			{
-	     				WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_CRIMSON, i);
-	     				i--;
-	     				if(i<=1)
-	     					dir = 0;
-	     			}
-	     			WS28XX_Update(&ws);
+			printf("Data: %X\r\n", code); //debug terminal text
 
+			switch (code) {
+			case 0xFF8877: // "1"
+				animationCode = 1;
+				ledsON = 1;
+				break;
+			case 0xFF48B7: // "2"
+				animationCode = 2;
+				ledsON = 1;
+				break;
+			case 0xFFC837: // "3"
+				animationCode = 3;
+				ledsON = 1;
+				break;
+			case 0xFF28D7: // "4"
+				animationCode = 4;
+				ledsON = 1;
+				break;
+			case 0xFFA857: // "5"
+				animationCode = 5;
+				ledsON = 1;
+				break;
+			case 0xFF58A7: // "0"
+				animationCode = 0;
+				ledsON = 0;
+				break;
+			default:
+				break;
+			}
 
+			if (HAL_GPIO_ReadPin(sense5V_GPIO_Port, sense5V_Pin)==0 && ledsON == 1) //output OFF, but leds should be on
+					{
+				HAL_GPIO_WritePin(boost_WKUP_GPIO_Port, boost_WKUP_Pin, GPIO_PIN_RESET); //turn the boost on (100ms LOW pulse)
+				HAL_Delay(100);
+				HAL_GPIO_WritePin(boost_WKUP_GPIO_Port, boost_WKUP_Pin,	GPIO_PIN_SET);
+			}
 
 		}
-			//printf("Data: %X, bitIndex: %d\r\n",dataBuffer, bitIndex);
 
+		if (tm < HAL_GetTick()) { //routine for effects
+			tm = HAL_GetTick() + 10;
+
+			switch (animationCode) {
+			case 0: // "0"
+				turnAllOff();
+				break;
+			case 1: // "1"
+				setAllBlue();
+				break;
+			case 2: // "2"
+				GlitteringWavesEffect();
+				break;
+			case 3: // "3"
+				EnchantedRippleEffect();
+				break;
+			case 4: // "4"
+				TwinklingGlowEffect();
+				break;
+			case 5: // "5"
+				CarTurnSignalEffect();
+				break;
+			default:
+				break;
+
+			}
+		}
+
+		if (tmboostON < HAL_GetTick() && ledsON == 1) { //routine for waking up boost
+
+			if (boostONswitch) { //100ms low pulse every 20s, if LEDs are running
+				tmboostON = HAL_GetTick() + 100;
+				HAL_GPIO_WritePin(boost_WKUP_GPIO_Port, boost_WKUP_Pin,
+						GPIO_PIN_RESET);
+			} else {
+				tmboostON = HAL_GetTick() + 20000;
+				HAL_GPIO_WritePin(boost_WKUP_GPIO_Port, boost_WKUP_Pin,
+						GPIO_PIN_SET);
+			}
+			boostONswitch = !boostONswitch;
+		}
 
     /* USER CODE END WHILE */
 
@@ -399,9 +474,13 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(boost_WKUP_GPIO_Port, boost_WKUP_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PC13 */
   GPIO_InitStruct.Pin = GPIO_PIN_13;
@@ -410,11 +489,24 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : boost_WKUP_Pin */
+  GPIO_InitStruct.Pin = boost_WKUP_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(boost_WKUP_GPIO_Port, &GPIO_InitStruct);
+
   /*Configure GPIO pin : PA6 */
   GPIO_InitStruct.Pin = GPIO_PIN_6;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : sense5V_Pin */
+  GPIO_InitStruct.Pin = sense5V_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(sense5V_GPIO_Port, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
@@ -460,48 +552,139 @@ int fputc(int ch, FILE *f)
  */
 PUTCHAR_PROTOTYPE {
 	HAL_UART_Transmit(&huart1, (uint8_t*) &ch, 1, HAL_MAX_DELAY);
-	//HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
+//HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
 	return ch;
 }
 
-
-
 /* IR TIMER AND DECODING */
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-  if(GPIO_Pin == GPIO_PIN_6)
-  {
-    if (__HAL_TIM_GET_COUNTER(&htim3) > 8000)
-    {
-      tempCode = 0;
-      bitIndex = 0;
-    }
-    else if (__HAL_TIM_GET_COUNTER(&htim3) > 1700)
-    {
-      tempCode |= (1UL << (31-bitIndex));   // write 1
-      bitIndex++;
-    }
-    else if (__HAL_TIM_GET_COUNTER(&htim3) > 1000)
-    {
-      tempCode &= ~(1UL << (31-bitIndex));  // write 0
-      bitIndex++;
-    }
-    if(bitIndex == 32)
-    {
-      cmdli = ~tempCode; // Logical inverted last 8 bits
-      cmd = tempCode >> 8; // Second last 8 bits
-      if(cmdli == cmd) // Check for errors
-      {
-        code = tempCode; // If no bit errors
-        // Do your main work HERE
-        printf("Data: %X\r\n",code);
-      }
-      bitIndex = 0;
-    }
-    __HAL_TIM_SET_COUNTER(&htim3, 0);
-  }
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+	if (GPIO_Pin == GPIO_PIN_6) {
+		if (__HAL_TIM_GET_COUNTER(&htim3) > 8000) {
+			tempCode = 0;
+			bitIndex = 0;
+		} else if (__HAL_TIM_GET_COUNTER(&htim3) > 1700) {
+			tempCode |= (1UL << (31 - bitIndex));   // write 1
+			bitIndex++;
+		} else if (__HAL_TIM_GET_COUNTER(&htim3) > 1000) {
+			tempCode &= ~(1UL << (31 - bitIndex));  // write 0
+			bitIndex++;
+		}
+		if (bitIndex == 32) {
+			cmdli = ~tempCode; // Logical inverted last 8 bits
+			cmd = tempCode >> 8; // Second last 8 bits
+			if (cmdli == cmd) // Check for errors
+					{
+				code = tempCode; // If no bit errors
+				// Do your main work HERE
+				//printf("Data: %X\r\n",code);
+				processIR = 1;
+			}
+			bitIndex = 0;
+		}
+		__HAL_TIM_SET_COUNTER(&htim3, 0);
+	}
 }
 
+/* LED EFFECTS */
+
+void setAllBlue(void) {
+	WS28XX_SetPixel_RGBW_565(&ws, 0, COLOR_RGB565_CYAN, 100);
+	WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_CYAN, 100);
+	WS28XX_SetPixel_RGBW_565(&ws, 2, COLOR_RGB565_CYAN, 100);
+	WS28XX_Update(&ws);
+}
+
+void turnAllOff(void) {
+	WS28XX_SetPixel_RGBW_565(&ws, 0, COLOR_RGB888_BLACK, 0);
+	WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB888_BLACK, 0);
+	WS28XX_SetPixel_RGBW_565(&ws, 2, COLOR_RGB888_BLACK, 0);
+	WS28XX_Update(&ws);
+}
+
+void GlitteringWavesEffect(void) {
+	static uint32_t next_update = 0;
+	static uint8_t brightness[3] = { 100, 120, 140 }; // Initial brightness for each LED
+	static int8_t delta[3] = { 10, -15, 20 }; // Change in brightness for each LED
+
+	if (HAL_GetTick() >= next_update) {
+		next_update = HAL_GetTick() + 5; // 5ms periodic update
+
+		for (int i = 0; i < 3; i++) {
+			brightness[i] += delta[i];
+			if (brightness[i] >= 255 || brightness[i] <= 100) {
+				delta[i] = -delta[i]; // Reverse direction at boundaries
+			}
+			WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_CYAN, brightness[i]);
+		}
+		WS28XX_Update(&ws);
+	}
+}
+void EnchantedRippleEffect(void) {
+	static uint32_t next_update = 0;
+	static uint8_t brightness = 0;
+	static int8_t direction = 1; // 1 for increasing, -1 for decreasing
+
+	if (HAL_GetTick() >= next_update) {
+		next_update = HAL_GetTick() + 5; // 5ms periodic update
+
+		brightness += 5 * direction;
+		if (brightness >= 255 || brightness <= 0) {
+			direction = -direction; // Reverse at boundaries
+		}
+
+		WS28XX_SetPixel_RGBW_565(&ws, 0, COLOR_RGB565_BLUE, brightness);
+		WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_GREEN, brightness / 2);
+		WS28XX_SetPixel_RGBW_565(&ws, 2, COLOR_RGB565_PURPLE, 255 - brightness);
+		WS28XX_Update(&ws);
+
+	}
+}
+void TwinklingGlowEffect(void) {
+	static uint32_t next_update = 0;
+	static uint8_t brightness[3] = { 50, 100, 150 }; // Initial brightness for each LED
+	static int8_t delta[3] = { 5, -3, 4 }; // Change rate for each LED
+
+	if (HAL_GetTick() >= next_update) {
+		next_update = HAL_GetTick() + 5; // 5ms periodic update
+
+		for (int i = 0; i < 3; i++) {
+			brightness[i] += delta[i];
+			if (brightness[i] >= 255 || brightness[i] <= 50) {
+				delta[i] = -delta[i]; // Reverse direction at boundaries
+				// Add randomness for a twinkle effect
+				if (brightness[i] <= 50) {
+					delta[i] = (rand() % 5) + 3; // Randomize twinkle speed
+				}
+			}
+			WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_AQUA, brightness[i]);
+		}
+		WS28XX_Update(&ws);
+	}
+}
+
+void CarTurnSignalEffect(void) {
+	static uint32_t next_update = 0;
+	static bool leds_on = false; // State to track whether the LEDs are on or off
+
+	if (HAL_GetTick() >= next_update) {
+		next_update = HAL_GetTick() + (leds_on ? 300 : 700); // 300ms ON, 700ms OFF for classic timing
+
+		if (leds_on) {
+			// Turn off all LEDs
+			for (int i = 0; i < 3; i++) {
+				WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_BLACK, 0);
+			}
+			leds_on = false;
+		} else {
+			// Turn on all LEDs with Amber
+			for (int i = 0; i < 3; i++) {
+				WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_ORANGE, 255);
+			}
+			leds_on = true;
+		}
+		WS28XX_Update(&ws);
+	}
+}
 
 /* USER CODE END 4 */
 

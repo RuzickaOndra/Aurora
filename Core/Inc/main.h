@@ -58,6 +58,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define boost_WKUP_Pin GPIO_PIN_1
+#define boost_WKUP_GPIO_Port GPIOA
+#define sense5V_Pin GPIO_PIN_12
+#define sense5V_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

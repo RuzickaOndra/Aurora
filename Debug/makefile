@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := IR_decoder
+BUILD_ARTIFACT_NAME := Aurora_LEDFins_A
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-IR_decoder.elf \
+Aurora_LEDFins_A.elf \
 
 MAP_FILES += \
-IR_decoder.map \
+Aurora_LEDFins_A.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-IR_decoder.list \
+Aurora_LEDFins_A.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: IR_decoder.elf secondary-outputs
+main-build: Aurora_LEDFins_A.elf secondary-outputs
 
 # Tool invocations
-IR_decoder.elf IR_decoder.map: $(OBJS) $(USER_OBJS) D:\PRACE\Aurora\STM32F030C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "IR_decoder.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"D:\PRACE\Aurora\STM32F030C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_decoder.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Aurora_LEDFins_A.elf Aurora_LEDFins_A.map: $(OBJS) $(USER_OBJS) D:\PRACE\Aurora\STM32F030C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Aurora_LEDFins_A.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"D:\PRACE\Aurora\STM32F030C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Aurora_LEDFins_A.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,14 +71,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-IR_decoder.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "IR_decoder.list"
+Aurora_LEDFins_A.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Aurora_LEDFins_A.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) IR_decoder.elf IR_decoder.list IR_decoder.map default.size.stdout
+	-$(RM) Aurora_LEDFins_A.elf Aurora_LEDFins_A.list Aurora_LEDFins_A.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
