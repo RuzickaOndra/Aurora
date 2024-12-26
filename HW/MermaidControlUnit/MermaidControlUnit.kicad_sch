@@ -82,8 +82,8 @@
 		)
 	)
 	(sheet
-		(at 224.79 73.66)
-		(size 41.91 13.97)
+		(at 227.33 72.39)
+		(size 36.83 33.02)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -94,7 +94,7 @@
 		)
 		(uuid "9991d764-5141-439c-a23f-3637534d362c")
 		(property "Sheetname" "Outputs"
-			(at 224.79 72.9484 0)
+			(at 227.33 71.6784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -103,13 +103,133 @@
 			)
 		)
 		(property "Sheetfile" "outputs.kicad_sch"
-			(at 224.79 88.2146 0)
+			(at 227.33 105.9946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "String11" input
+			(at 227.33 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "33920db7-df0a-4a76-989a-f4827273cd32")
+		)
+		(pin "String5" input
+			(at 227.33 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "721e5a0f-9451-46ba-b097-9c670958504b")
+		)
+		(pin "String4" input
+			(at 227.33 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ef4061a1-cd79-4071-bb70-b72f72cd06cc")
+		)
+		(pin "String10" input
+			(at 227.33 100.33 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c528c40b-a1e9-4a26-a858-85527903dbb1")
+		)
+		(pin "String7" input
+			(at 227.33 92.71 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8703ab7b-b6df-4133-aea7-8138f57bfe54")
+		)
+		(pin "String1" input
+			(at 227.33 77.47 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c8183e78-0365-4aac-9fd4-4d58e0cd34bc")
+		)
+		(pin "String0" input
+			(at 227.33 74.93 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "37e95897-7c32-4ac7-b5e8-beb1cbfbdc5e")
+		)
+		(pin "String6" input
+			(at 227.33 90.17 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b4b9d9e4-efb0-4445-83ea-2307e039a4dd")
+		)
+		(pin "String3" input
+			(at 227.33 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "82ce546d-a5de-471d-b4f8-a5a8b8bfd7f1")
+		)
+		(pin "String9" input
+			(at 227.33 97.79 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "739f633b-b933-4243-a49f-f245fb1d1110")
+		)
+		(pin "String2" input
+			(at 227.33 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "33bec00b-2f27-4d31-97cc-6de73adc4f5a")
+		)
+		(pin "String8" input
+			(at 227.33 95.25 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e35f80ae-0f4f-49a1-a0ab-418d1afe5373")
 		)
 		(instances
 			(project "MermaidControlUnit"
@@ -120,8 +240,8 @@
 		)
 	)
 	(sheet
-		(at 177.8 73.66)
-		(size 38.1 13.97)
+		(at 176.53 72.39)
+		(size 38.1 33.02)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -132,7 +252,7 @@
 		)
 		(uuid "efe70ad0-7477-47d7-b435-61acb0161622")
 		(property "Sheetname" "Level Shifter"
-			(at 177.8 72.9484 0)
+			(at 176.53 71.6784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -141,13 +261,253 @@
 			)
 		)
 		(property "Sheetfile" "levelShifter.kicad_sch"
-			(at 177.8 88.2146 0)
+			(at 176.53 105.9946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "LVIN2" input
+			(at 176.53 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "915a2857-84b0-459e-b0bd-e6f9c26e409f")
+		)
+		(pin "LVIN3" input
+			(at 176.53 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e2271c83-b0d5-469b-adf8-cfefe63a67ee")
+		)
+		(pin "HVOUT2" output
+			(at 214.63 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d68efc14-1339-4615-b518-30a0902e0a6d")
+		)
+		(pin "HVOUT3" output
+			(at 214.63 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a346d34a-bdcf-4c7a-95ce-2cd300892785")
+		)
+		(pin "LVIN6" input
+			(at 176.53 90.17 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0f0d2046-ad7b-4173-a525-050c9655552e")
+		)
+		(pin "LVIN7" input
+			(at 176.53 92.71 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0f1ba81b-9394-4ec7-8b27-bd46795741f8")
+		)
+		(pin "LVIN1" input
+			(at 176.53 77.47 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "00d2af4c-2a19-46e5-8e7b-2d42a1e5a2f2")
+		)
+		(pin "LVIN0" input
+			(at 176.53 74.93 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f5d73b3c-d3a4-4c18-a989-51fa1828bc39")
+		)
+		(pin "HVOUT1" output
+			(at 214.63 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d0e852f3-d80f-48ee-9629-643ba09ffbfa")
+		)
+		(pin "HVOUT0" output
+			(at 214.63 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e1e6c242-315f-4691-8851-f988d82a0431")
+		)
+		(pin "HVOUT6" output
+			(at 214.63 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8356e782-c55b-4e17-9c3d-5480eea16cdf")
+		)
+		(pin "HVOUT7" output
+			(at 214.63 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "84f85602-bc01-4ac5-ac2e-6c43d1202c5e")
+		)
+		(pin "LVIN4" input
+			(at 176.53 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9bbe331b-98c9-4971-89f6-5b18e88f1371")
+		)
+		(pin "LVIN5" input
+			(at 176.53 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0f489a2f-eaa5-4957-8525-e6037e723761")
+		)
+		(pin "HVOUT4" output
+			(at 214.63 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e9738be0-7ee7-4a69-b82f-60d8bfa2694f")
+		)
+		(pin "HVOUT5" output
+			(at 214.63 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "938dba48-58c3-48d3-a51c-34567ca52737")
+		)
+		(pin "HVOUT10" output
+			(at 214.63 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "23819cac-bac5-4fe1-b327-97739a1d494c")
+		)
+		(pin "HVOUT11" output
+			(at 214.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a6e86236-7753-47a6-8fed-a8abb74772e4")
+		)
+		(pin "HVOUT8" output
+			(at 214.63 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7e873d24-1957-488d-ba0d-162830251169")
+		)
+		(pin "HVOUT9" output
+			(at 214.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9f2cdb89-4581-4e4d-90f7-ef943e61035d")
+		)
+		(pin "LVIN10" input
+			(at 176.53 100.33 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d860d659-773d-4fc9-8fc8-0bb13ffc4083")
+		)
+		(pin "LVIN11" input
+			(at 176.53 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8b3c51d9-7061-4186-baa9-4d1f0f623fa4")
+		)
+		(pin "LVIN8" input
+			(at 176.53 95.25 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bb8103da-849e-4972-8b67-579f543bca1a")
+		)
+		(pin "LVIN9" input
+			(at 176.53 97.79 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "99a6e7e4-f8ae-484d-a999-6c84f1dd5286")
 		)
 		(instances
 			(project "MermaidControlUnit"

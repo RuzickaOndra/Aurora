@@ -1950,6 +1950,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 105.41) (xy 129.54 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40f6ea43-7574-4894-bca0-83adfe32dfc9")
+	)
+	(wire
+		(pts
 			(xy 129.54 62.23) (xy 143.51 62.23)
 		)
 		(stroke
@@ -2180,6 +2190,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 107.95) (xy 129.54 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2758d30-4d32-44ef-bb40-3e873cda05db")
+	)
+	(wire
+		(pts
 			(xy 158.75 52.07) (xy 158.75 44.45)
 		)
 		(stroke
@@ -2396,6 +2416,17 @@
 		)
 		(uuid "8cefef90-7808-4610-911e-da75bc3096d6")
 	)
+	(label "RX"
+		(at 129.54 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7b48064-1c6d-43fa-8d51-db8566797f0c")
+	)
 	(label "OSC32OUT"
 		(at 129.54 85.09 0)
 		(fields_autoplaced yes)
@@ -2406,6 +2437,17 @@
 			(justify left bottom)
 		)
 		(uuid "cf121391-b49b-493f-a3b8-e266960edc40")
+	)
+	(label "TX"
+		(at 129.54 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d49dbc4e-9f42-4686-9de2-cf2e6128cfd8")
 	)
 	(label "OSCOUT"
 		(at 92.71 71.12 180)
