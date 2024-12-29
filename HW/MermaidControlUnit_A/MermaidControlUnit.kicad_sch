@@ -706,6 +706,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 105.41) (xy 256.54 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23966a20-4600-4a9c-bb30-4ca865830a80")
+	)
+	(wire
+		(pts
 			(xy 77.47 121.92) (xy 85.09 121.92)
 		)
 		(stroke
@@ -813,6 +823,16 @@
 			(type default)
 		)
 		(uuid "45a1465a-0f9b-4b88-aa0c-62e43e53437a")
+	)
+	(wire
+		(pts
+			(xy 153.67 101.6) (xy 153.67 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "476cb6be-b5b4-4a68-8545-b1035e578b44")
 	)
 	(wire
 		(pts
@@ -926,6 +946,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 101.6) (xy 161.29 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e8ae3ed-e738-4ebd-b200-d573dbd4db9a")
+	)
+	(wire
+		(pts
 			(xy 166.37 60.96) (xy 166.37 83.82)
 		)
 		(stroke
@@ -933,6 +963,16 @@
 			(type default)
 		)
 		(uuid "6ed33a2b-57cb-49ca-a0c3-3be1caeedc78")
+	)
+	(wire
+		(pts
+			(xy 148.59 101.6) (xy 148.59 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6edb3371-3598-4fcc-a07c-5677dc25c738")
 	)
 	(wire
 		(pts
@@ -1016,16 +1056,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 96.52) (xy 148.59 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8978d359-dec0-4456-848b-30cd5f202bba")
-	)
-	(wire
-		(pts
 			(xy 213.36 63.5) (xy 226.06 63.5)
 		)
 		(stroke
@@ -1056,13 +1086,13 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 96.52) (xy 153.67 110.49)
+			(xy 156.21 101.6) (xy 156.21 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9cf77fd3-b713-4b3c-ac0e-3707e5dda9c1")
+		(uuid "a0eb6e13-d1c4-4104-9fef-e21bca48e38b")
 	)
 	(wire
 		(pts
@@ -1116,16 +1146,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 96.52) (xy 156.21 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc355249-31cc-4bdb-99f7-209cd491e6e5")
-	)
-	(wire
-		(pts
 			(xy 167.64 63.5) (xy 175.26 63.5)
 		)
 		(stroke
@@ -1153,6 +1173,16 @@
 			(type default)
 		)
 		(uuid "cb0a500c-9314-453d-aace-ce4b498fd6d9")
+	)
+	(wire
+		(pts
+			(xy 256.54 105.41) (xy 256.54 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbaaa527-74b8-4b8c-97eb-c709c7ece6e2")
 	)
 	(wire
 		(pts
@@ -1226,7 +1256,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 96.52) (xy 151.13 110.49)
+			(xy 151.13 101.6) (xy 151.13 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1281,7 +1311,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 171.45 35.56 0)
 			(effects
 				(font
@@ -1349,7 +1379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 177.8 81.28 0)
 			(effects
 				(font
@@ -1417,7 +1447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 172.72 81.28 0)
 			(effects
 				(font
@@ -1551,7 +1581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 172.72 38.1 0)
 			(effects
 				(font
@@ -1618,7 +1648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 173.99 35.56 0)
 			(effects
 				(font
@@ -1686,7 +1716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 175.26 81.28 0)
 			(effects
 				(font
@@ -1753,7 +1783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 177.8 38.1 0)
 			(effects
 				(font
@@ -1820,7 +1850,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 171.45 83.82 0)
 			(effects
 				(font
@@ -1887,7 +1917,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 175.26 38.1 0)
 			(effects
 				(font
@@ -1955,7 +1985,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 176.53 83.82 0)
 			(effects
 				(font
@@ -2094,7 +2124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 176.53 35.56 0)
 			(effects
 				(font
@@ -2161,7 +2191,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 102.87 80.01 0)
 			(effects
 				(font
@@ -2229,7 +2259,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 173.99 83.82 0)
 			(effects
 				(font
@@ -2368,7 +2398,7 @@
 	)
 	(sheet
 		(at 120.65 43.18)
-		(size 43.18 53.34)
+		(size 43.18 58.42)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2388,7 +2418,7 @@
 			)
 		)
 		(property "Sheetfile" "STM32.kicad_sch"
-			(at 120.65 97.1046 0)
+			(at 120.65 102.1846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2397,7 +2427,7 @@
 			)
 		)
 		(pin "TIM4_CH3" output
-			(at 163.83 71.12 0)
+			(at 163.83 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2407,7 +2437,7 @@
 			(uuid "ad2789ee-1c89-4014-b5d3-9c28305a4c18")
 		)
 		(pin "TIM4_CH4" output
-			(at 163.83 73.66 0)
+			(at 163.83 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2417,7 +2447,7 @@
 			(uuid "ad212674-3bc7-4f15-9832-24a9f32f5422")
 		)
 		(pin "I2C2_SCL" output
-			(at 151.13 96.52 270)
+			(at 151.13 101.6 270)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2427,7 +2457,7 @@
 			(uuid "ca99d5e1-1462-4183-8000-68dd64f0f04b")
 		)
 		(pin "I2C2_SDA" bidirectional
-			(at 153.67 96.52 270)
+			(at 153.67 101.6 270)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2437,7 +2467,7 @@
 			(uuid "595d8530-658b-48d2-adee-87eb4b30f487")
 		)
 		(pin "boostWkUp" output
-			(at 156.21 96.52 270)
+			(at 156.21 101.6 270)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2457,7 +2487,7 @@
 			(uuid "5d7a17ef-3be7-40ef-85b6-0999b42e6d33")
 		)
 		(pin "TIM4_CH1" output
-			(at 163.83 66.04 0)
+			(at 163.83 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2467,7 +2497,7 @@
 			(uuid "2ab65965-8003-4b77-89bd-3b93c7b41829")
 		)
 		(pin "TIM3_CH4" output
-			(at 163.83 63.5 0)
+			(at 163.83 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2477,7 +2507,7 @@
 			(uuid "b00a3e9c-0958-437b-b144-69bd4b570840")
 		)
 		(pin "TIM3_CH3" output
-			(at 163.83 60.96 0)
+			(at 163.83 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2487,7 +2517,7 @@
 			(uuid "4791d280-5778-49ea-a386-901a5a546a15")
 		)
 		(pin "TIM2_CH2" output
-			(at 163.83 48.26 0)
+			(at 163.83 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2497,7 +2527,7 @@
 			(uuid "653a252c-6364-4ff6-b4f6-2c2b8abfffc8")
 		)
 		(pin "TIM4_CH2" output
-			(at 163.83 68.58 0)
+			(at 163.83 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2507,7 +2537,7 @@
 			(uuid "83430b8e-df46-4f37-a81d-ac0acc1f082f")
 		)
 		(pin "IRQ_Boost" output
-			(at 148.59 96.52 270)
+			(at 148.59 101.6 270)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2517,7 +2547,7 @@
 			(uuid "4492a7e0-6128-4322-8f83-22f29e4f9450")
 		)
 		(pin "TIM2_CH4" output
-			(at 163.83 53.34 0)
+			(at 163.83 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2527,7 +2557,7 @@
 			(uuid "91beb942-8935-4da7-b3c9-63bce9283055")
 		)
 		(pin "TIM2_CH3" output
-			(at 163.83 50.8 0)
+			(at 163.83 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2537,7 +2567,7 @@
 			(uuid "f01a200b-e662-4daf-8b89-99c39784adee")
 		)
 		(pin "TIM3_CH1" output
-			(at 163.83 55.88 0)
+			(at 163.83 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2547,7 +2577,7 @@
 			(uuid "dc97def8-955e-4880-9c3f-b7f3fc89dc1b")
 		)
 		(pin "TIM3_CH2" output
-			(at 163.83 58.42 0)
+			(at 163.83 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2557,7 +2587,7 @@
 			(uuid "cb91e535-e068-4bc8-8e8f-afd452051780")
 		)
 		(pin "TIM2_CH1" output
-			(at 163.83 45.72 0)
+			(at 163.83 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2565,6 +2595,16 @@
 				(justify right)
 			)
 			(uuid "1c5020a0-567d-46d8-b46d-d8b2f0d410e9")
+		)
+		(pin "+5V_EN" output
+			(at 161.29 101.6 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "23c764bf-fd57-40f9-9e34-53cfb820f900")
 		)
 		(instances
 			(project "MermaidControlUnit"
@@ -2723,6 +2763,16 @@
 				(justify left)
 			)
 			(uuid "e35f80ae-0f4f-49a1-a0ab-418d1afe5373")
+		)
+		(pin "EN" input
+			(at 256.54 76.2 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c59bf695-4c6d-4453-b050-78d8f1bd5140")
 		)
 		(instances
 			(project "MermaidControlUnit"

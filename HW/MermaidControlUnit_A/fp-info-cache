@@ -1,4 +1,4 @@
-24239325292788993
+24241065255612273
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -60112,6 +60112,13 @@ Inductor_SMD
 L_Neosid_SMs95_SMs95p
 Neosid, Inductor, SMs95, Fixed inductor, SMD, magnetically shielded, https://neosid.de/import-data/product-pdf/neoFestind_SMs95SMs95p.pdf
 Neosid Inductor SMs95 Fixed inductor SMD magnetically shielded
+0
+2
+2
+Inductor_SMD
+L_PCC-M1040M-LP
+Inductor, APV, APH1040, 10.8x10.0x3.8mm, (http://en.apvind.com/public/upload/20240408/996aafa961154ed753e4983e7eb80fa7.pdf), generated with kicad-footprint-generator gen_inductor.py
+Inductor molded power shielded
 0
 2
 2

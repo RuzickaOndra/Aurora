@@ -2667,10 +2667,6 @@
 		(at 179.07 82.55)
 		(uuid "7329b8b7-4202-4755-bc94-a0d9e967386f")
 	)
-	(no_connect
-		(at 143.51 102.87)
-		(uuid "f99be201-1e7e-4184-aa32-44c27aa36090")
-	)
 	(wire
 		(pts
 			(xy 196.85 39.37) (xy 196.85 38.1)
@@ -3350,6 +3346,16 @@
 			(type default)
 		)
 		(uuid "87b57d1e-98ec-47d1-86ab-ca1173b394b3")
+	)
+	(wire
+		(pts
+			(xy 129.54 102.87) (xy 143.51 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "881199d3-7aab-45d3-ba5a-8594b0d0f5b2")
 	)
 	(wire
 		(pts
@@ -4210,6 +4216,17 @@
 		)
 		(uuid "b492d86b-950b-4dc4-bd5a-af5d0428fd96")
 	)
+	(label "+5V_EN"
+		(at 129.54 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be100473-dabe-4d43-86b3-2ba99aede97f")
+	)
 	(label "OSC32OUT"
 		(at 129.54 85.09 0)
 		(fields_autoplaced yes)
@@ -4531,6 +4548,18 @@
 			(justify left)
 		)
 		(uuid "bcec9357-a191-42d6-bfb0-05e1cb1903b1")
+	)
+	(hierarchical_label "+5V_EN"
+		(shape output)
+		(at 129.54 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da0cc822-ea62-4ed0-a627-5461d48f7276")
 	)
 	(hierarchical_label "TIM4_CH4"
 		(shape output)
@@ -5395,7 +5424,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 196.85 95.25 0)
 			(effects
 				(font
@@ -5591,7 +5620,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 132.08 67.31 0)
 			(effects
 				(font
@@ -5788,7 +5817,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 247.65 74.93 0)
 			(effects
 				(font
@@ -7282,7 +7311,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 196.85 97.79 0)
 			(effects
 				(font
@@ -7416,7 +7445,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 241.3 30.48 0)
 			(effects
 				(font
@@ -7548,7 +7577,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 128.27 57.15 0)
 			(effects
 				(font
@@ -8161,7 +8190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 229.87 72.39 0)
 			(effects
 				(font
