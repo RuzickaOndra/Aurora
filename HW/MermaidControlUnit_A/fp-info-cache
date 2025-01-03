@@ -1,4 +1,4 @@
-24241065255612273
+24248008740781208
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -65036,6 +65036,34 @@ Yellow 5381 Series LED
 0
 2
 2
+Library
+AuroraSymbol10mm
+
+
+0
+0
+0
+Library
+PinHeader_1x03_P2.54mm_Horizontal_SmallSilk
+Through hole angled pin header, 1x03, 2.54mm pitch, 6mm pin length, single row
+Through hole angled pin header THT 1x03 2.54mm single row
+0
+3
+3
+Library
+PinHeader_1x05_P2.54mm_Horizontal_SmallSilk
+Through hole angled pin header, 1x05, 2.54mm pitch, 6mm pin length, single row
+Through hole angled pin header THT 1x05 2.54mm single row
+0
+5
+5
+Library
+PinHeader_2x03_P2.54mm_Horizontal_SmallSilk
+Through hole angled pin header, 2x03, 2.54mm pitch, 6mm pin length, double rows
+Through hole angled pin header THT 2x03 2.54mm double row
+0
+6
+6
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet

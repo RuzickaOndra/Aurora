@@ -7843,7 +7843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal"
+		(property "Footprint" "Library:PinHeader_1x05_P2.54mm_Horizontal_SmallSilk"
 			(at 251.46 113.03 0)
 			(effects
 				(font
@@ -7922,7 +7922,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+		(property "Footprint" "Library:PinHeader_1x03_P2.54mm_Horizontal_SmallSilk"
 			(at 251.46 133.35 0)
 			(effects
 				(font
@@ -8657,7 +8657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+		(property "Footprint" "Library:PinHeader_1x03_P2.54mm_Horizontal_SmallSilk"
 			(at 254 35.56 0)
 			(effects
 				(font

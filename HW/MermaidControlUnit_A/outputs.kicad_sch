@@ -396,6 +396,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "library:NCP45520"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -959,6 +1080,12 @@
 		)
 	)
 	(junction
+		(at 54.61 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26aa7b50-910f-49f0-a66b-2449f8a6670b")
+	)
+	(junction
 		(at 85.09 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -969,6 +1096,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5850d622-b25d-4c70-9e3f-b8f78c48dc55")
+	)
+	(junction
+		(at 74.93 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d159f26-176c-41a2-85ab-e5b0f54952c3")
 	)
 	(junction
 		(at 77.47 156.21)
@@ -1083,6 +1216,16 @@
 			(type default)
 		)
 		(uuid "22d49721-a24c-40df-9c95-215c8b90c56c")
+	)
+	(wire
+		(pts
+			(xy 54.61 156.21) (xy 54.61 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22e86e77-d24e-4a4d-a6a7-468305a363d0")
 	)
 	(wire
 		(pts
@@ -1213,6 +1356,16 @@
 			(type default)
 		)
 		(uuid "34ad58d5-fee2-4dc1-8a29-70ff31b536cf")
+	)
+	(wire
+		(pts
+			(xy 74.93 144.78) (xy 74.93 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35c9bdf1-28fe-4984-bb62-416e1e28aa35")
 	)
 	(wire
 		(pts
@@ -1526,6 +1679,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 144.78) (xy 60.96 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae0d0458-2790-4f4c-98ef-4c2313cdd0bb")
+	)
+	(wire
+		(pts
 			(xy 97.79 115.57) (xy 91.44 115.57)
 		)
 		(stroke
@@ -1803,6 +1966,16 @@
 			(type default)
 		)
 		(uuid "f7f44b2a-8bce-4bd5-a5f8-8382aaf89fb3")
+	)
+	(wire
+		(pts
+			(xy 68.58 144.78) (xy 74.93 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa79c35c-f386-43b7-bfd2-ea64ffae5656")
 	)
 	(wire
 		(pts
@@ -2126,7 +2299,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal"
+		(property "Footprint" "Library:PinHeader_2x03_P2.54mm_Horizontal_SmallSilk"
 			(at 208.28 114.3 0)
 			(effects
 				(font
@@ -2206,7 +2379,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal"
+		(property "Footprint" "Library:PinHeader_2x03_P2.54mm_Horizontal_SmallSilk"
 			(at 83.82 74.93 0)
 			(effects
 				(font
@@ -2676,7 +2849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal"
+		(property "Footprint" "Library:PinHeader_2x03_P2.54mm_Horizontal_SmallSilk"
 			(at 143.51 115.57 0)
 			(effects
 				(font
@@ -3454,6 +3627,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 64.77 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8968dcf9-db9b-48d2-83dd-e65bd758d689")
+		(property "Reference" "R39"
+			(at 64.77 140.716 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D.N.P."
+			(at 64.77 142.494 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 64.77 146.558 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 64.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ab31ecf-3274-4e92-92e6-aa21b531b5aa")
+		)
+		(pin "2"
+			(uuid "c9842973-b4f4-4296-b04a-409964c4fc84")
+		)
+		(instances
+			(project "MermaidControlUnit"
+				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/9991d764-5141-439c-a23f-3637534d362c"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 97.79 67.31 0)
 		(unit 1)
@@ -3698,7 +3938,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal"
+		(property "Footprint" "Library:PinHeader_2x03_P2.54mm_Horizontal_SmallSilk"
 			(at 208.28 76.2 0)
 			(effects
 				(font
@@ -4103,7 +4343,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal"
+		(property "Footprint" "Library:PinHeader_2x03_P2.54mm_Horizontal_SmallSilk"
 			(at 83.82 115.57 0)
 			(effects
 				(font
@@ -4443,7 +4683,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal"
+		(property "Footprint" "Library:PinHeader_2x03_P2.54mm_Horizontal_SmallSilk"
 			(at 143.51 74.93 0)
 			(effects
 				(font
