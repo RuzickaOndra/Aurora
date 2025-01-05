@@ -4786,6 +4786,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "NCU18WF104F6SRB"
+			(at 173.99 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b4756b41-3728-4499-a846-473a0eace4c8")
 		)

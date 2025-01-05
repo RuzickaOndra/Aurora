@@ -2317,6 +2317,56 @@
 		)
 		(uuid "fbf82714-d583-49a3-9801-63b08144856b")
 	)
+	(text "175.00 mΩ"
+		(exclude_from_sim no)
+		(at 33.528 111.506 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "510b8399-f615-4efa-ac98-f5dc273c653f")
+	)
+	(text "all C min 25Vrating"
+		(exclude_from_sim no)
+		(at 91.186 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "824ddfba-16d6-4524-bfe2-8f4cf3678270")
+	)
+	(text "11.50 uH ± 10%"
+		(exclude_from_sim no)
+		(at 36.322 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "87a1ca16-d70c-497e-8f8b-a0e478a6632d")
+	)
+	(text "YX-A11-R431231-G3232"
+		(exclude_from_sim no)
+		(at 40.64 106.934 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b4be9764-d340-47c1-8a13-422b74dbbab2")
+	)
+	(text "TCOLD = -10°C\nTHOT = 100°C"
+		(exclude_from_sim no)
+		(at 179.07 137.414 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bcf79e34-aca0-4664-8685-b168317dcc92")
+	)
 	(label "+5V_Charging"
 		(at 165.1 72.39 0)
 		(fields_autoplaced yes)
@@ -2974,7 +3024,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "68n"
 			(at 85.598 86.868 90)
 			(effects
 				(font
@@ -3108,7 +3158,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100p"
 			(at 100.33 101.6 0)
 			(effects
 				(font
@@ -3773,8 +3823,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "NTC"
-			(at 169.418 129.54 0)
+		(property "Value" "NTC 100k"
+			(at 163.322 132.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3801,6 +3851,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 167.64 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "NCU18WF104F6SRB"
 			(at 167.64 128.27 0)
 			(effects
 				(font
@@ -4242,7 +4301,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "39n"
 			(at 85.598 97.028 90)
 			(effects
 				(font
@@ -4853,7 +4912,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "47n"
 			(at 85.598 91.948 90)
 			(effects
 				(font
@@ -5382,7 +5441,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2n2"
 			(at 93.98 101.6 0)
 			(effects
 				(font
