@@ -2172,6 +2172,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 232.41 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7e78e1cc-bfff-466e-873f-3ad8ca7c1ae4")
 		)
@@ -2466,7 +2475,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SN74LVC2T45DCUR"
+		(property "Value" "SN74LVC2T45DCTR"
 			(at 146.9741 78.74 0)
 			(effects
 				(font
@@ -2494,6 +2503,15 @@
 			)
 		)
 		(property "Description" "Dual-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, VSSOP-8"
+			(at 144.78 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "SN74LVC2T45DCTR"
 			(at 144.78 63.5 0)
 			(effects
 				(font
@@ -2589,6 +2607,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 54.61 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "da68ea87-dbf1-4168-81ef-2c07863151c5")
 		)
@@ -2623,7 +2650,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SN74LVC2T45DCUR"
+		(property "Value" "SN74LVC2T45DCTR"
 			(at 68.2341 139.7 0)
 			(effects
 				(font
@@ -2651,6 +2678,15 @@
 			)
 		)
 		(property "Description" "Dual-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, VSSOP-8"
+			(at 66.04 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "SN74LVC2T45DCTR"
 			(at 66.04 124.46 0)
 			(effects
 				(font
@@ -2738,6 +2774,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 77.47 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
 			(at 77.47 105.41 0)
 			(effects
 				(font
@@ -2945,6 +2990,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 209.55 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "32b08233-7067-4343-bd0d-5e009701844d")
 		)
@@ -3136,6 +3190,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 77.47 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
 			(at 77.47 44.45 0)
 			(effects
 				(font
@@ -3503,7 +3566,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SN74LVC2T45DCUR"
+		(property "Value" "SN74LVC2T45DCTR"
 			(at 146.9741 139.7 0)
 			(effects
 				(font
@@ -3531,6 +3594,15 @@
 			)
 		)
 		(property "Description" "Dual-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, VSSOP-8"
+			(at 144.78 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "SN74LVC2T45DCTR"
 			(at 144.78 124.46 0)
 			(effects
 				(font
@@ -3851,7 +3923,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SN74LVC2T45DCUR"
+		(property "Value" "SN74LVC2T45DCTR"
 			(at 223.1741 139.7 0)
 			(effects
 				(font
@@ -3879,6 +3951,15 @@
 			)
 		)
 		(property "Description" "Dual-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, VSSOP-8"
+			(at 220.98 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "SN74LVC2T45DCTR"
 			(at 220.98 124.46 0)
 			(effects
 				(font
@@ -4031,6 +4112,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 133.35 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
 			(at 133.35 44.45 0)
 			(effects
 				(font
@@ -4368,6 +4458,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 156.21 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2e7cf0df-7917-46de-a068-c54f35876343")
 		)
@@ -4437,6 +4536,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 209.55 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "69cd5f30-9d62-4a6d-ad8f-019a0947cdd5")
 		)
@@ -4471,7 +4579,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SN74LVC2T45DCUR"
+		(property "Value" "SN74LVC2T45DCTR"
 			(at 223.1741 78.74 0)
 			(effects
 				(font
@@ -4499,6 +4607,15 @@
 			)
 		)
 		(property "Description" "Dual-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, VSSOP-8"
+			(at 220.98 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "SN74LVC2T45DCTR"
 			(at 220.98 63.5 0)
 			(effects
 				(font
@@ -4789,6 +4906,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 156.21 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a8a3f98a-54bf-4d56-8f06-22fe82619698")
 		)
@@ -4953,7 +5079,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SN74LVC2T45DCUR"
+		(property "Value" "SN74LVC2T45DCTR"
 			(at 68.2341 78.74 0)
 			(effects
 				(font
@@ -4981,6 +5107,15 @@
 			)
 		)
 		(property "Description" "Dual-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, VSSOP-8"
+			(at 66.04 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "SN74LVC2T45DCTR"
 			(at 66.04 63.5 0)
 			(effects
 				(font
@@ -5271,6 +5406,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 133.35 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2e84c6f6-4d29-457c-bf65-ab68316fe0ee")
 		)
@@ -5332,6 +5476,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 54.61 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
 			(at 54.61 105.41 0)
 			(effects
 				(font
@@ -5661,6 +5814,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 232.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
 			(at 232.41 44.45 0)
 			(effects
 				(font

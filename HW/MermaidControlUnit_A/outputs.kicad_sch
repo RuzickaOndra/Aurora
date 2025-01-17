@@ -2326,6 +2326,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "BX-PZ2.54-2-3PWZ"
+			(at 208.28 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "6ee88419-6cb2-4ffe-ac60-d09568557994")
 		)
@@ -2398,6 +2407,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 83.82 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "BX-PZ2.54-2-3PWZ"
 			(at 83.82 74.93 0)
 			(effects
 				(font
@@ -2876,6 +2894,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "BX-PZ2.54-2-3PWZ"
+			(at 143.51 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "0189ca41-a8db-4eee-9749-f92e97574588")
 		)
@@ -2957,6 +2984,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A106MA8NRNC "
+			(at 90.17 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6c1c3f6c-898f-4e87-91ea-5e69fad42ae8")
 		)
@@ -3018,6 +3054,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 41.91 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10A105KB8NNNC "
 			(at 41.91 167.64 0)
 			(effects
 				(font
@@ -3876,6 +3921,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "NCP45520IMNTWG-H "
+			(at 64.77 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "1c299fb8-01af-4ad7-8670-1095632d696f")
 		)
@@ -3957,6 +4011,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "BX-PZ2.54-2-3PWZ"
 			(at 208.28 76.2 0)
 			(effects
 				(font
@@ -4370,6 +4433,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "BX-PZ2.54-2-3PWZ"
+			(at 83.82 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "3b5b285f-f076-44a5-a35e-9b3ac6080580")
 		)
@@ -4710,6 +4782,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "BX-PZ2.54-2-3PWZ"
+			(at 143.51 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "9055ad45-0d11-4f0b-b568-bce3c722620a")
 		)
@@ -4783,6 +4864,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 85.09 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10A105KB8NNNC "
 			(at 85.09 162.56 0)
 			(effects
 				(font

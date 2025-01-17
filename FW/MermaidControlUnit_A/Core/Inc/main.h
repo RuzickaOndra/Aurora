@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2024 STMicroelectronics.
+  * Copyright (c) 2025 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -59,6 +59,22 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LED1_Pin GPIO_PIN_13
+#define LED1_GPIO_Port GPIOC
+#define IRQ_Boost_Pin GPIO_PIN_2
+#define IRQ_Boost_GPIO_Port GPIOB
+#define SCL_Boost_Pin GPIO_PIN_10
+#define SCL_Boost_GPIO_Port GPIOB
+#define SDA_Boost_Pin GPIO_PIN_11
+#define SDA_Boost_GPIO_Port GPIOB
+#define boostWkUp_Pin GPIO_PIN_12
+#define boostWkUp_GPIO_Port GPIOB
+#define powerOn_Pin GPIO_PIN_13
+#define powerOn_GPIO_Port GPIOB
+#define LED2_Pin GPIO_PIN_4
+#define LED2_GPIO_Port GPIOB
+#define EN_5V_Pin GPIO_PIN_5
+#define EN_5V_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

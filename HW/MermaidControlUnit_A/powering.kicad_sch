@@ -4669,73 +4669,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 205.74 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "162aa93a-240e-4e69-9241-ccc90bd0fa94")
-		(property "Reference" "R25"
-			(at 205.74 44.196 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220R"
-			(at 205.74 45.974 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 205.74 50.038 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 205.74 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 205.74 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f2ee86a4-b1fb-4b5e-91ce-acf009c120c2")
-		)
-		(pin "2"
-			(uuid "6df51b7c-8de1-4f68-87c7-2b1a8440f427")
-		)
-		(instances
-			(project "MermaidControlUnit"
-				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/06175bf7-056d-4c87-b544-5701a40046aa"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 173.99 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4931,6 +4864,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A105KB8NNNC "
+			(at 41.91 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "00724065-243f-49be-a452-23516f775d10")
 		)
@@ -4956,7 +4898,7 @@
 		(dnp no)
 		(uuid "2378303d-de97-4516-b99a-e4254188be22")
 		(property "Reference" "C19"
-			(at 104.648 104.394 0)
+			(at 103.632 104.394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4992,6 +4934,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 107.95 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10A226MP8NUNE "
 			(at 107.95 106.68 0)
 			(effects
 				(font
@@ -5060,6 +5011,15 @@
 			)
 		)
 		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+			(at 58.42 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "AP2112K-3.3TRG1 "
 			(at 58.42 34.29 0)
 			(effects
 				(font
@@ -5212,6 +5172,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "F0603HI8000V032TM"
+			(at 44.45 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f855c532-080c-4ce3-946d-6ce4d391833e")
 		)
@@ -5271,6 +5240,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0603FR-071KL "
 			(at 208.28 76.2 0)
 			(effects
 				(font
@@ -5341,6 +5319,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 113.03 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10A106MA8NRNC "
 			(at 113.03 82.55 0)
 			(effects
 				(font
@@ -5486,6 +5473,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A226MP8NUNE "
+			(at 172.72 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "19142aab-787d-4109-ae31-b67c1ae6aaa6")
 		)
@@ -5576,7 +5572,7 @@
 		(dnp no)
 		(uuid "32d96f13-abd0-4ffa-ae20-5254de926e52")
 		(property "Reference" "C16"
-			(at 94.488 104.394 0)
+			(at 93.218 104.394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5612,6 +5608,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 97.79 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10A226MP8NUNE "
 			(at 97.79 106.68 0)
 			(effects
 				(font
@@ -5689,6 +5694,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "GRM21BR61A476ME15L "
+			(at 88.9 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6bce19a9-a8f6-4f2d-a66e-27605c07c185")
 		)
@@ -5751,6 +5765,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 144.78 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10A226MP8NUNE "
 			(at 144.78 143.51 0)
 			(effects
 				(font
@@ -5885,6 +5908,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 60.96 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM21BR61A476ME15L "
 			(at 60.96 146.05 0)
 			(effects
 				(font
@@ -6054,8 +6086,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 226.568 69.596 0)
+		(property "Value" "BLUE"
+			(at 227.076 69.596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6081,6 +6113,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 219.71 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "APT1608QBC/D"
 			(at 219.71 68.58 0)
 			(effects
 				(font
@@ -6148,6 +6189,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 158.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0603FR-070RL "
 			(at 158.75 138.43 0)
 			(effects
 				(font
@@ -6360,6 +6410,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A106MA8NRNC "
+			(at 101.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "74464e06-2ddb-4288-b25e-db1f68eab41b")
 		)
@@ -6525,8 +6584,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 226.568 65.786 0)
+		(property "Value" "BLUE"
+			(at 227.076 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6552,6 +6611,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 219.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "APT1608QBC/D"
 			(at 219.71 64.77 0)
 			(effects
 				(font
@@ -7022,6 +7090,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "RC0603FR-0782KL "
+			(at 173.99 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "104705e3-cf66-4319-8672-6cc73363d1f8")
 		)
@@ -7330,7 +7407,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.3x3.3mm_ThermalVias"
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_ThermalVias"
 			(at 151.13 87.63 0)
 			(effects
 				(font
@@ -7349,6 +7426,15 @@
 			)
 		)
 		(property "Description" "Integrated USB TYPE-C Power Bank System-On-Chip with 3A charger, 3.1A discharger"
+			(at 151.13 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "IP5310 "
 			(at 151.13 87.63 0)
 			(effects
 				(font
@@ -7609,7 +7695,7 @@
 		(dnp no)
 		(uuid "8883a7cf-56e6-4fbf-a7e0-cf8c6dd8784c")
 		(property "Reference" "C21"
-			(at 109.982 104.394 0)
+			(at 108.966 104.394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7645,6 +7731,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 113.03 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10A226MP8NUNE "
 			(at 113.03 106.68 0)
 			(effects
 				(font
@@ -7877,7 +7972,7 @@
 		(dnp no)
 		(uuid "8fbb6666-0e2d-4709-99ad-8011ab12fd14")
 		(property "Reference" "C18"
-			(at 99.568 104.394 0)
+			(at 98.552 104.394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7913,6 +8008,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 102.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10A226MP8NUNE "
 			(at 102.87 106.68 0)
 			(effects
 				(font
@@ -8112,6 +8216,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 54.61 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM21BR61A476ME15L "
 			(at 54.61 146.05 0)
 			(effects
 				(font
@@ -8390,6 +8503,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "RC0603FR-07100KL "
+			(at 48.26 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2f419934-a907-49f4-a63e-c3e3c40a7902")
 		)
@@ -8589,6 +8711,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A106MA8NRNC "
+			(at 36.83 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2b28474d-131a-4405-9f7b-a3329aba1508")
 		)
@@ -8723,6 +8854,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A105KB8NNNC "
+			(at 71.12 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "65fe8eb6-2420-455a-95c6-c06927c5afb2")
 		)
@@ -8792,6 +8932,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "RC0603FR-0710KL "
+			(at 198.12 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a699a900-fe88-40ca-b4a1-81e320b1ffeb")
 		)
@@ -8824,8 +8973,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 226.568 77.47 0)
+		(property "Value" "BLUE"
+			(at 227.33 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8851,6 +9000,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "APT1608QBC/D"
 			(at 219.71 76.2 0)
 			(effects
 				(font
@@ -8998,6 +9156,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 113.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "FRC0603F2R00TS "
 			(at 113.03 74.93 0)
 			(effects
 				(font
@@ -9267,6 +9434,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 95.25 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM21BR61A476ME15L "
 			(at 95.25 74.93 0)
 			(effects
 				(font
@@ -9676,6 +9852,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A106MA8NRNC "
+			(at 76.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c719d46d-53b3-4fe4-a915-15ca1754ad3d")
 		)
@@ -9906,8 +10091,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 226.568 73.406 0)
+		(property "Value" "BLUE"
+			(at 227.076 73.406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9933,6 +10118,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 219.71 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "APT1608QBC/D"
 			(at 219.71 72.39 0)
 			(effects
 				(font
@@ -10084,6 +10278,82 @@
 			(project "MermaidControlUnit"
 				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/06175bf7-056d-4c87-b544-5701a40046aa"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205.74 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8c0bf26-fb55-431e-ba91-a4f919c6ce8c")
+		(property "Reference" "R25"
+			(at 205.74 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "110R"
+			(at 205.74 46.228 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 205.74 50.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 205.74 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0603WAF1100T5E "
+			(at 205.74 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4694cd2d-dab5-434a-a936-b601aa94fb92")
+		)
+		(pin "2"
+			(uuid "56f5b18c-876e-4409-ba21-5550d11b56e6")
+		)
+		(instances
+			(project "MermaidControlUnit"
+				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/06175bf7-056d-4c87-b544-5701a40046aa"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -10337,6 +10607,15 @@
 			)
 		)
 		(property "Description" "6.3A Id, 20V Vds, 21mOhm Rds, N-Channel StrongIRFET Power MOSFET, SOT-23"
+			(at 189.23 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "IRLML6244TRPBF "
 			(at 189.23 48.26 0)
 			(effects
 				(font

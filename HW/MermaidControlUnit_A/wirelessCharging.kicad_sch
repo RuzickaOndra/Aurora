@@ -1248,12 +1248,6 @@
 		(uuid "30ece964-2449-484a-9caf-53b3d7150915")
 	)
 	(junction
-		(at 179.07 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "39454c9e-ae28-4824-83b2-f5f92eb582aa")
-	)
-	(junction
 		(at 93.98 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1264,6 +1258,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b45ca07-c4d9-4fbc-b643-e59b4e0dbe46")
+	)
+	(junction
+		(at 176.53 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "518a3054-fb3c-4509-9c94-c2d9602b347c")
 	)
 	(junction
 		(at 102.87 85.09)
@@ -1356,6 +1356,12 @@
 		(uuid "e2dc08d6-7f53-4311-9208-9a4887278d92")
 	)
 	(junction
+		(at 184.15 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4786155-baf3-4a71-abb0-87097cb10f5a")
+	)
+	(junction
 		(at 93.98 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1439,7 +1445,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 107.95) (xy 167.64 107.95)
+			(xy 167.64 107.95) (xy 176.53 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1759,7 +1765,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 127) (xy 179.07 128.27)
+			(xy 184.15 128.27) (xy 184.15 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1809,6 +1815,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 107.95) (xy 176.53 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79889872-c127-4afb-89a5-1adc7a238429")
+	)
+	(wire
+		(pts
 			(xy 102.87 102.87) (xy 102.87 107.95)
 		)
 		(stroke
@@ -1816,6 +1832,16 @@
 			(type default)
 		)
 		(uuid "7aafe80a-eb63-4640-9bfb-58b13c5b5d19")
+	)
+	(wire
+		(pts
+			(xy 176.53 107.95) (xy 184.15 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f23983e-55c2-4653-b5bd-e3603f685a4b")
 	)
 	(wire
 		(pts
@@ -2009,6 +2035,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 107.95) (xy 184.15 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c3efd3-669e-4ed2-87ba-6e3811019de4")
+	)
+	(wire
+		(pts
 			(xy 167.64 101.6) (xy 170.18 101.6)
 		)
 		(stroke
@@ -2109,7 +2145,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 119.38) (xy 179.07 107.95)
+			(xy 184.15 107.95) (xy 184.15 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2327,16 +2363,6 @@
 		)
 		(uuid "510b8399-f615-4efa-ac98-f5dc273c653f")
 	)
-	(text "all C min 25Vrating"
-		(exclude_from_sim no)
-		(at 91.186 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "824ddfba-16d6-4524-bfe2-8f4cf3678270")
-	)
 	(text "11.50 uH ± 10%"
 		(exclude_from_sim no)
 		(at 36.322 109.22 0)
@@ -2357,7 +2383,7 @@
 		)
 		(uuid "b4be9764-d340-47c1-8a13-422b74dbbab2")
 	)
-	(text "TCOLD = -10°C\nTHOT = 100°C"
+	(text "TCOLD = -6°C\nTHOT = 100°C"
 		(exclude_from_sim no)
 		(at 179.07 137.414 0)
 		(effects
@@ -2453,6 +2479,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "0603WAF1100T5E "
+			(at 173.99 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4aabd6c5-e9f1-4a12-af38-4d9be64feb8f")
 		)
@@ -2470,7 +2505,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 179.07 123.19 0)
+		(at 184.15 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2478,7 +2513,7 @@
 		(dnp no)
 		(uuid "06d13cd8-baf5-4474-9d4b-afbb9274c2eb")
 		(property "Reference" "C47"
-			(at 174.498 120.65 0)
+			(at 179.578 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2487,7 +2522,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 179.832 125.984 0)
+			(at 184.912 127.254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2496,7 +2531,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 180.0352 127 0)
+			(at 185.1152 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2505,7 +2540,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 123.19 0)
+			(at 184.15 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2514,7 +2549,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 179.07 123.19 0)
+			(at 184.15 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 184.15 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2583,6 +2627,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 222.25 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0603WAF2000T5E "
 			(at 222.25 104.14 0)
 			(effects
 				(font
@@ -2790,6 +2843,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "06035C103JAT2A "
+			(at 110.49 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f8cf5800-259f-4559-974b-48d4f22fb914")
 		)
@@ -2851,6 +2913,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 243.84 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10A106MA8NRNC "
 			(at 243.84 78.74 0)
 			(effects
 				(font
@@ -2956,7 +3027,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "RED"
 			(at 178.308 78.74 0)
 			(effects
 				(font
@@ -2983,6 +3054,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 171.45 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "APT1608EC"
 			(at 171.45 77.47 0)
 			(effects
 				(font
@@ -3052,6 +3132,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 80.01 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GCJ188R71H683KA12D"
 			(at 80.01 85.09 0)
 			(effects
 				(font
@@ -3186,6 +3275,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 100.33 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CGA3E2C0G1H101JT0Y0N "
 			(at 100.33 99.06 0)
 			(effects
 				(font
@@ -3330,6 +3428,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10B474KB8VPNC "
+			(at 110.49 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "27296d13-cd49-4136-bb13-68372f29b7d7")
 		)
@@ -3391,6 +3498,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 110.49 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CL10B474KB8VPNC "
 			(at 110.49 113.03 0)
 			(effects
 				(font
@@ -3532,6 +3648,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "BQ51013C-Q1"
+			(at 138.43 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "19"
 			(uuid "a4995a3f-2eee-4206-970b-c2dccbaccbe0")
 		)
@@ -3650,6 +3775,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 196.85 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
 			(at 196.85 87.63 0)
 			(effects
 				(font
@@ -3885,7 +4019,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 179.07 128.27 0)
+		(at 184.15 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3893,7 +4027,7 @@
 		(dnp no)
 		(uuid "784e149e-c295-4926-a9c2-116d4a48b75d")
 		(property "Reference" "#PWR0120"
-			(at 179.07 134.62 0)
+			(at 184.15 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3902,7 +4036,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.07 132.08 0)
+			(at 184.15 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3910,7 +4044,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 128.27 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3919,7 +4053,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 128.27 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3928,7 +4062,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 128.27 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4061,6 +4195,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 110.49 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "C1608X7R1H223KT000N "
 			(at 110.49 118.11 0)
 			(effects
 				(font
@@ -4268,6 +4411,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A106MA8NRNC "
+			(at 207.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1be75df1-d03b-4dbb-8f2f-ab2ca8e6e518")
 		)
@@ -4337,6 +4489,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10B393KB8NNNC "
+			(at 80.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cb5982f5-70a0-49c6-9ae2-5e627847d17b")
 		)
@@ -4347,6 +4508,84 @@
 			(project "MermaidControlUnit"
 				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/f3cac301-4304-4120-b04f-ca1f74d608b8"
 					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 176.53 118.11 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e869883-77aa-461a-af9c-ff9e4b6e014c")
+		(property "Reference" "R40"
+			(at 178.308 117.348 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "30k"
+			(at 178.308 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 178.308 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 176.53 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0603WAF3002T5E "
+			(at 176.53 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc2ba43c-e47e-4531-8d3d-e42100f48419")
+		)
+		(pin "2"
+			(uuid "0a8af9ef-fae5-43b4-9cb3-7c9151d47775")
+		)
+		(instances
+			(project "MermaidControlUnit"
+				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/f3cac301-4304-4120-b04f-ca1f74d608b8"
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -4406,6 +4645,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A106MA8NRNC "
+			(at 201.93 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "56c960d5-bae7-4f50-90be-53224b350a11")
 		)
@@ -4416,75 +4664,6 @@
 			(project "MermaidControlUnit"
 				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/f3cac301-4304-4120-b04f-ca1f74d608b8"
 					(reference "C49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 167.64 118.11 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "997b1d27-c71e-4eab-bfff-d0f76a0b1128")
-		(property "Reference" "R33"
-			(at 169.418 117.348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 169.418 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 169.418 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 167.64 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 167.64 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "34d5ee73-b4a6-4f67-a8a2-b75fe344ef63")
-		)
-		(pin "2"
-			(uuid "7c7eaa36-b50a-4a74-abd4-0b0582bb1f64")
-		)
-		(instances
-			(project "MermaidControlUnit"
-				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/f3cac301-4304-4120-b04f-ca1f74d608b8"
-					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -4609,6 +4788,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 213.36 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "059f91f2-260c-4ffa-93f8-17b8a8c3cf23")
 		)
@@ -4668,6 +4856,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 163.83 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0603FR-070RL "
 			(at 163.83 101.6 0)
 			(effects
 				(font
@@ -4810,6 +5007,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "WR06X4222FTL "
+			(at 214.63 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eaa19305-d1c0-4f23-9330-bd8a4c49abbd")
 		)
@@ -4871,6 +5077,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 110.49 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "06035C103JAT2A "
 			(at 110.49 90.17 0)
 			(effects
 				(font
@@ -4948,6 +5163,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CGA3E2X7R1H473KT0Y0N "
+			(at 80.01 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9ecc1d75-8eef-4040-b68c-14a322aa54df")
 		)
@@ -4958,6 +5182,147 @@
 			(project "MermaidControlUnit"
 				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/f3cac301-4304-4120-b04f-ca1f74d608b8"
 					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176.53 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c741a4f2-32ae-4438-9b16-b2e4f243d250")
+		(property "Reference" "#PWR0142"
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb53ca02-17f6-4e11-bef4-cf1bd72d4ce8")
+		)
+		(instances
+			(project "MermaidControlUnit"
+				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/f3cac301-4304-4120-b04f-ca1f74d608b8"
+					(reference "#PWR0142")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 167.64 118.11 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c856405c-469b-400d-a76d-f6ee8c539d81")
+		(property "Reference" "R33"
+			(at 170.942 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "110R"
+			(at 171.45 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 169.418 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 167.64 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0603WAF1100T5E "
+			(at 167.64 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "330f669a-36f9-4798-b2f6-496754533b77")
+		)
+		(pin "2"
+			(uuid "1773eac7-8777-4388-ad1d-fca12ded5c5c")
+		)
+		(instances
+			(project "MermaidControlUnit"
+				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/f3cac301-4304-4120-b04f-ca1f74d608b8"
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -5072,6 +5437,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 161.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0603FR-071KL "
 			(at 161.29 77.47 0)
 			(effects
 				(font
@@ -5226,7 +5600,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 179.07 107.95 270)
+		(at 187.96 107.95 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5235,7 +5609,7 @@
 		(fields_autoplaced yes)
 		(uuid "dcae14cb-fb29-43bf-801a-3e8ae51a3e7b")
 		(property "Reference" "TP33"
-			(at 184.15 106.6799 90)
+			(at 193.04 106.6799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5244,7 +5618,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 184.15 109.2199 90)
+			(at 193.04 109.2199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5253,7 +5627,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 179.07 113.03 0)
+			(at 187.96 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5262,7 +5636,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 113.03 0)
+			(at 187.96 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5271,7 +5645,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 179.07 107.95 0)
+			(at 187.96 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5477,6 +5851,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "GRM1885C2A222JA01D "
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5acae5b7-d77f-4b90-9bc7-0eb63d1fb7e8")
 		)
@@ -5538,6 +5921,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 233.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
 			(at 233.68 78.74 0)
 			(effects
 				(font
@@ -5747,6 +6139,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A105KB8NNNC "
+			(at 238.76 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ca24216b-19f8-417a-814e-0944871c2e75")
 		)
@@ -5875,6 +6276,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 110.49 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "C1608X7R1H223KT000N "
 			(at 110.49 80.01 0)
 			(effects
 				(font

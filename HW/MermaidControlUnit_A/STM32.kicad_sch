@@ -1095,7 +1095,7 @@
 				)
 			)
 		)
-		(symbol "MCU_ST_STM32F1:STM32F103C8Tx"
+		(symbol "MCU_ST_STM32F1:STM32F103CBTx"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1108,7 +1108,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "STM32F103C8Tx"
+			(property "Value" "STM32F103CBTx"
 				(at 7.62 39.37 0)
 				(effects
 					(font
@@ -1127,7 +1127,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103cb.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1136,7 +1136,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 64KB flash, 20KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
+			(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 128KB flash, 20KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1163,7 +1163,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "STM32F103C8Tx_0_1"
+			(symbol "STM32F103CBTx_0_1"
 				(rectangle
 					(start -15.24 -38.1)
 					(end 15.24 38.1)
@@ -1176,7 +1176,7 @@
 					)
 				)
 			)
-			(symbol "STM32F103C8Tx_1_1"
+			(symbol "STM32F103CBTx_1_1"
 				(pin power_in line
 					(at -5.08 40.64 270)
 					(length 2.54)
@@ -4716,6 +4716,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 191.77 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "77aa20fc-21a4-48ac-9007-9a551ea37cdf")
 		)
@@ -4777,6 +4786,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 181.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
 			(at 181.61 45.72 0)
 			(effects
 				(font
@@ -4920,6 +4938,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "RC0603FR-07100KL "
+			(at 257.81 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0f097613-3470-42e4-9678-4b2d257b616c")
 		)
@@ -4979,6 +5006,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 120.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0603FR-070RL "
 			(at 120.65 67.31 0)
 			(effects
 				(font
@@ -5184,6 +5220,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "RC0603FR-07470RL "
+			(at 60.96 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7b329ce7-5f68-41db-8ab2-ea1ff07fac42")
 		)
@@ -5374,6 +5419,15 @@
 			)
 		)
 		(property "Description" "8MHz Surface Mount Crystal 18pF ±20ppm ±30ppm SMD5032 Crystals ROHS"
+			(at 74.93 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "ABM3-8.000MHZ-D2Y-T"
 			(at 74.93 71.12 0)
 			(effects
 				(font
@@ -5975,6 +6029,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "GCM1885C1H200JA16D"
+			(at 81.28 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f9b98671-a158-4e05-992c-b80c4350a77d")
 		)
@@ -6044,6 +6107,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 229.87 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4abfec12-f8c9-4424-983c-62a6fbaafbb7")
 		)
@@ -6054,215 +6126,6 @@
 			(project "MermaidControlUnit"
 				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/36afd377-71d8-4b66-b8af-2cdaa020672d"
 					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MCU_ST_STM32F1:STM32F103C8Tx")
-		(at 161.29 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "437c1c4e-3e99-4fdf-9a07-79f50bf936d9")
-		(property "Reference" "U1"
-			(at 166.0241 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32F103C8Tx"
-			(at 166.0241 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-			(at 146.05 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
-			(at 161.29 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 64KB flash, 20KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
-			(at 161.29 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "37"
-			(uuid "b9db0647-4f53-410f-9f79-357d721e4db3")
-		)
-		(pin "4"
-			(uuid "e73d6d52-d87c-4953-9d06-42b0d1465359")
-		)
-		(pin "46"
-			(uuid "6621419a-4e0d-41e6-b8c0-f694f81fef28")
-		)
-		(pin "7"
-			(uuid "5f165f6f-caf0-48f9-a77c-a5c316a07e47")
-		)
-		(pin "16"
-			(uuid "569bf352-9bad-4f55-bbfe-2de517ea20e7")
-		)
-		(pin "40"
-			(uuid "8d3e4da9-2e1b-4699-8254-bfb4e4cacca5")
-		)
-		(pin "29"
-			(uuid "ae9509d2-a40e-4fa6-8d81-0f39554f6ec7")
-		)
-		(pin "43"
-			(uuid "b8dc405e-e5ce-485e-8315-9ca643b37779")
-		)
-		(pin "47"
-			(uuid "35bb40f1-a2ca-4d33-a637-d3b1359e242f")
-		)
-		(pin "42"
-			(uuid "1e5cf25e-e379-4962-8264-dc53365370ab")
-		)
-		(pin "22"
-			(uuid "4fc53e5e-e834-4a76-a7e9-fdcd827c30bc")
-		)
-		(pin "48"
-			(uuid "baca0e35-5250-4f92-b6bf-3fdc98d6f3c3")
-		)
-		(pin "6"
-			(uuid "baebfbe1-db30-49ff-ac7e-fba48fb2417d")
-		)
-		(pin "8"
-			(uuid "56fd503d-4a89-4d5b-ba38-22af115cb84c")
-		)
-		(pin "9"
-			(uuid "093ea26e-d3f2-49a3-a8cd-294d9835ee55")
-		)
-		(pin "26"
-			(uuid "d40db619-d0f8-4f1d-aa18-11249e70c92d")
-		)
-		(pin "3"
-			(uuid "7c40659a-ec33-41ec-a74b-46d95c6822ba")
-		)
-		(pin "25"
-			(uuid "adaff67b-7e29-436a-a958-0cf18279c5ee")
-		)
-		(pin "35"
-			(uuid "a9cdda02-5b57-4757-b6a0-3e6cf4f7cdba")
-		)
-		(pin "11"
-			(uuid "352d6378-2c49-45be-870b-f7f71f893ace")
-		)
-		(pin "34"
-			(uuid "b5fd82cf-8e94-486c-ac05-700900dcb270")
-		)
-		(pin "33"
-			(uuid "38c90120-c34f-46a1-a53c-db204fd4f4e7")
-		)
-		(pin "44"
-			(uuid "aa2c8d68-ffce-4770-b825-9e495f255124")
-		)
-		(pin "31"
-			(uuid "e1360132-64aa-49f9-a093-f77544ef19a4")
-		)
-		(pin "39"
-			(uuid "9e8a26b3-a902-45c9-b8fa-a7a9bc5d00b6")
-		)
-		(pin "41"
-			(uuid "1ae397e6-5fed-47d4-8149-9cf9718bf929")
-		)
-		(pin "23"
-			(uuid "9da07d06-f930-4e98-b007-db649ab2f5d9")
-		)
-		(pin "5"
-			(uuid "8fd0335d-7b32-4624-bea7-a58f692d71b6")
-		)
-		(pin "15"
-			(uuid "4c026f1e-a409-44b9-9e93-ca5574575b00")
-		)
-		(pin "1"
-			(uuid "efc5a608-d1d0-44a6-acca-491816faa5d0")
-		)
-		(pin "2"
-			(uuid "7bf9c119-41ca-4c0c-92c2-92ea8c4004c4")
-		)
-		(pin "20"
-			(uuid "12fcb5b2-3be8-4980-9e00-7e0c6c7b5e7c")
-		)
-		(pin "45"
-			(uuid "666f64ac-61d3-4829-a1dc-5a11e7434adf")
-		)
-		(pin "24"
-			(uuid "9bed25d4-6a48-4b7e-987c-ee078bc1c29c")
-		)
-		(pin "10"
-			(uuid "a6b9352b-f59d-4bcf-b1cb-aa50d8d1b633")
-		)
-		(pin "12"
-			(uuid "e934d9de-d875-4d27-a192-f1ff6ad6c52d")
-		)
-		(pin "21"
-			(uuid "c0fd0d7f-3868-487c-a36b-151459e863ce")
-		)
-		(pin "19"
-			(uuid "a5122830-11e1-483d-bb48-bb1c4eb55914")
-		)
-		(pin "27"
-			(uuid "0eb99559-2d60-40df-987a-f26e0d0fb745")
-		)
-		(pin "17"
-			(uuid "bd2cda7f-c0ac-43c5-8c1a-c84867d67cfe")
-		)
-		(pin "28"
-			(uuid "6c09b39b-83aa-4d60-9143-86ef8933904f")
-		)
-		(pin "13"
-			(uuid "79159d5e-79fb-4524-9b68-544d95064558")
-		)
-		(pin "14"
-			(uuid "42d298b9-f5f5-4d58-b55b-8c8fb607fccd")
-		)
-		(pin "32"
-			(uuid "f564b5a1-a583-4159-9a5c-93d309fe236a")
-		)
-		(pin "38"
-			(uuid "617af4f8-f343-49fa-b8cd-873b2086dec4")
-		)
-		(pin "18"
-			(uuid "1b153031-0047-40b9-b720-81b5140844cd")
-		)
-		(pin "30"
-			(uuid "c9f39a10-3de8-4855-af97-3734b4e0953e")
-		)
-		(pin "36"
-			(uuid "0649eb24-4905-4765-aba3-cddaf9282308")
-		)
-		(instances
-			(project "MermaidControlUnit"
-				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/36afd377-71d8-4b66-b8af-2cdaa020672d"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -6315,6 +6178,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 137.16 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0603FR-0710KL "
 			(at 137.16 54.61 0)
 			(effects
 				(font
@@ -6457,6 +6329,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "GCM1885C1H200JA16D"
+			(at 81.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c06cbd56-68a3-45ec-9651-25cc7e6ddb37")
 		)
@@ -6519,6 +6400,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 236.22 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0603FR-07100KL "
 			(at 236.22 81.28 0)
 			(effects
 				(font
@@ -6661,6 +6551,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 176.53 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f4c5afca-7993-41ed-a0e7-7aa38ef202a6")
 		)
@@ -6722,6 +6621,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 156.21 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0603FR-070RL "
 			(at 156.21 49.53 0)
 			(effects
 				(font
@@ -6862,6 +6770,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "RC0603FR-071ML "
+			(at 74.93 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84d6b3b0-f3e3-4b98-89fa-aa6236c571ac")
 		)
@@ -6923,6 +6840,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 68.58 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GCM1885C1H200JA16D"
 			(at 68.58 109.22 0)
 			(effects
 				(font
@@ -7000,6 +6926,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CC0603KRX7R9BB104"
+			(at 186.69 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b138a88d-0fa7-440a-9707-023416ef954a")
 		)
@@ -7010,6 +6945,215 @@
 			(project "MermaidControlUnit"
 				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/36afd377-71d8-4b66-b8af-2cdaa020672d"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU_ST_STM32F1:STM32F103CBTx")
+		(at 161.29 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "755b333f-f15f-424c-b920-af15e71c603f")
+		(property "Reference" "U1"
+			(at 166.0241 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32F103CBTx"
+			(at 166.0241 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+			(at 146.05 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103cb.pdf"
+			(at 161.29 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 128KB flash, 20KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
+			(at 161.29 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "21"
+			(uuid "a86d0c1a-df7a-4053-94d5-cc3bad0db36d")
+		)
+		(pin "6"
+			(uuid "860730cc-4bae-4171-9e70-061e166d3c6b")
+		)
+		(pin "28"
+			(uuid "f6a952a8-b83e-4416-82be-71dfb620ccc0")
+		)
+		(pin "37"
+			(uuid "37efdba2-871f-4852-ba4c-f4dc9f57a814")
+		)
+		(pin "12"
+			(uuid "a5862b88-82f4-4672-8f90-7ca7a57d894b")
+		)
+		(pin "3"
+			(uuid "305b1243-7b99-4fc7-a988-beee240d71dd")
+		)
+		(pin "44"
+			(uuid "4a18c78d-a5db-4eda-9ba4-445ae61d44c4")
+		)
+		(pin "46"
+			(uuid "21d08aa2-f742-4efe-86cd-9032f13c1119")
+		)
+		(pin "48"
+			(uuid "9faf95b2-de85-44d9-856a-3be9f8844995")
+		)
+		(pin "7"
+			(uuid "42b862b9-51ca-4ca6-8351-b47696090a37")
+		)
+		(pin "22"
+			(uuid "710347dc-5570-4c46-8e72-c26a71b8961e")
+		)
+		(pin "8"
+			(uuid "7e164320-8227-4a95-babc-e088e65aa032")
+		)
+		(pin "29"
+			(uuid "0255619e-0dd7-440a-a260-d68ad27e3efa")
+		)
+		(pin "38"
+			(uuid "b301324e-02a9-475d-b062-850eb0259c16")
+		)
+		(pin "2"
+			(uuid "caf5217e-7727-43c3-a78b-35b440c66c07")
+		)
+		(pin "18"
+			(uuid "c65f81f6-10b9-4163-a733-e9d686652081")
+		)
+		(pin "30"
+			(uuid "4a569206-7552-4072-aa4b-ddfd2ff97bfb")
+		)
+		(pin "41"
+			(uuid "96215e81-915e-40c8-ad7f-be71ab57b8c2")
+		)
+		(pin "32"
+			(uuid "df79d61b-900f-4e37-8e18-9a4f4286da91")
+		)
+		(pin "19"
+			(uuid "f896a55c-96d2-4882-b1c3-28bc9cf122f3")
+		)
+		(pin "34"
+			(uuid "ec9673c5-3dc1-4f4c-bc22-2ad14a4279f3")
+		)
+		(pin "42"
+			(uuid "fe44fd1e-be7c-4dd6-a31f-06fb3f577435")
+		)
+		(pin "43"
+			(uuid "92d314e7-04ee-4171-bad3-ac4ae1f52224")
+		)
+		(pin "9"
+			(uuid "87585c31-cfa6-41bb-a99f-db83e1cf49ce")
+		)
+		(pin "35"
+			(uuid "2cb55621-7e64-4932-9891-7bef0df1d0e4")
+		)
+		(pin "31"
+			(uuid "64f33bd9-e3f6-42a6-a5ba-8d4a55be66cd")
+		)
+		(pin "17"
+			(uuid "42d0a359-ddfa-4fc0-bf91-2f87745c5ab5")
+		)
+		(pin "25"
+			(uuid "d2f2b9c4-cd70-4bbf-a92d-4ce74272cc06")
+		)
+		(pin "10"
+			(uuid "1009dd8d-23a8-4c01-a174-3a412c6a6f0d")
+		)
+		(pin "26"
+			(uuid "34a8ec1e-47d1-4d64-8657-2d16d70f369e")
+		)
+		(pin "16"
+			(uuid "512499c1-9738-4b25-8a7b-cad0cfce6fc5")
+		)
+		(pin "47"
+			(uuid "7434ea53-84a1-41d3-a2ca-8e8ce72f6531")
+		)
+		(pin "20"
+			(uuid "a4a25a09-717e-4f2b-b879-0777ef6795fc")
+		)
+		(pin "13"
+			(uuid "373d6d16-5a00-41be-8403-26d05f5ff696")
+		)
+		(pin "40"
+			(uuid "ce96b582-aa16-4f5d-9d64-ffbf2ecb269d")
+		)
+		(pin "33"
+			(uuid "e66c6f9c-df65-4ba8-99cb-778641d655df")
+		)
+		(pin "23"
+			(uuid "eb60bd32-d954-4284-8ef9-1a2a5b1338db")
+		)
+		(pin "14"
+			(uuid "2ec5c187-f81c-40bb-a61d-47cdff98e563")
+		)
+		(pin "36"
+			(uuid "c46072bc-c406-44d0-a1db-33b739f2ded0")
+		)
+		(pin "24"
+			(uuid "21dea760-b4f6-4d8f-8c0c-f369225b3eed")
+		)
+		(pin "4"
+			(uuid "eb09da54-0c4c-42e6-9860-f4251279d723")
+		)
+		(pin "45"
+			(uuid "ac5e7605-30c3-4afb-8840-1c058d86aec0")
+		)
+		(pin "11"
+			(uuid "a7d360ea-390a-4362-a4fe-34c86520ada6")
+		)
+		(pin "15"
+			(uuid "f80372df-f3c8-4b8d-81c8-c608241df2f3")
+		)
+		(pin "27"
+			(uuid "ed80a4bd-ae6f-459f-b534-c76bd7d9eec2")
+		)
+		(pin "5"
+			(uuid "853f5559-0ee7-49d6-b050-43e184f15ead")
+		)
+		(pin "39"
+			(uuid "35c9bda2-66f5-42d4-b8e1-c31f3d788947")
+		)
+		(pin "1"
+			(uuid "400db625-c5e3-40c0-80cf-ad43291bdd66")
+		)
+		(instances
+			(project ""
+				(path "/613ad2be-9e1b-480a-bebd-92b3f4aa981e/36afd377-71d8-4b66-b8af-2cdaa020672d"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7127,6 +7271,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 257.81 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0603FR-07100KL "
 			(at 257.81 64.77 0)
 			(effects
 				(font
@@ -7269,6 +7422,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "GCM1885C1H200JA16D"
+			(at 68.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4c78a531-27cf-4eef-9052-a87f3c18c899")
 		)
@@ -7367,8 +7529,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 75.438 154.686 0)
+		(property "Value" "GREEN"
+			(at 76.708 154.686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7394,6 +7556,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "APT1608CGCK"
 			(at 68.58 153.67 0)
 			(effects
 				(font
@@ -7800,6 +7971,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CL10A106MA8NRNC "
+			(at 196.85 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "aaa2578b-b42c-40a0-b638-6c0e1b2615bc")
 		)
@@ -7862,6 +8042,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 251.46 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "5AMW4-10560-105-W0"
 			(at 251.46 113.03 0)
 			(effects
 				(font
@@ -7941,6 +8130,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 251.46 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "X6511WR-03H-C60D30R2"
 			(at 251.46 133.35 0)
 			(effects
 				(font
@@ -8349,6 +8547,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "RC0603FR-07100KL "
+			(at 236.22 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "258628a8-01cc-45fa-ac54-e544bd4f1dd5")
 		)
@@ -8482,6 +8689,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "CM315D32768DZFT "
+			(at 74.93 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ae982f5c-6f85-4618-8553-45d84bbdbd7a")
 		)
@@ -8579,7 +8795,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "RED"
 			(at 75.438 147.066 0)
 			(effects
 				(font
@@ -8606,6 +8822,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 68.58 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "APT1608EC"
 			(at 68.58 146.05 0)
 			(effects
 				(font
@@ -8684,6 +8909,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "X6511WR-03H-C60D30R2"
+			(at 254 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d51d4797-8404-4a31-a058-070de06f6ebf")
 		)
@@ -8754,6 +8988,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "RC0603FR-07470RL "
+			(at 60.96 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b262bb3a-4c81-4806-aafd-7063791b9a15")
 		)
@@ -8815,6 +9058,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 251.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "CC0603KRX7R9BB104"
 			(at 251.46 81.28 0)
 			(effects
 				(font

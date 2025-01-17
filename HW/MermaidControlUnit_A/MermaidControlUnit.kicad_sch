@@ -1538,6 +1538,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part Number" "RC0603FR-0722KL"
+			(at 91.44 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fd1491c5-9a16-4124-8561-9a38199102dc")
 		)
@@ -2070,6 +2079,15 @@
 			)
 		)
 		(property "Description" "dual schottky barrier diode, common cathode"
+			(at 107.95 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "BAT54CLT1G"
 			(at 107.95 88.9 0)
 			(effects
 				(font
