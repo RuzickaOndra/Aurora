@@ -4,6 +4,14 @@
 	(generator_version "8.0")
 	(uuid "4b99234b-da70-43fe-813c-d84264c2059b")
 	(paper "A4")
+	(title_block
+		(title "Mermaid Control Unit")
+		(date "2025-02-04")
+		(rev "A")
+		(company "Aurora Dreams Mermaids")
+		(comment 1 "Designed by: Ondrej Ruzicka")
+		(comment 4 "STM32 MCU")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
@@ -3896,6 +3904,36 @@
 			(type default)
 		)
 		(uuid "fed4aef9-c6ce-4ce3-9d1b-6d63173a484e")
+	)
+	(text "Programming"
+		(exclude_from_sim no)
+		(at 251.206 103.378 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "50da4932-d3bd-456c-88e5-65d928299ab7")
+	)
+	(text "UART"
+		(exclude_from_sim no)
+		(at 251.206 126.746 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b6e46529-3ddf-49db-8dcc-7e37e1686d81")
+	)
+	(text "IR Receiver"
+		(exclude_from_sim no)
+		(at 254.508 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c5a9ea11-6762-467a-8313-96a7408a2f03")
 	)
 	(label "SWCLK"
 		(at 193.04 97.79 180)
