@@ -27,7 +27,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Middlewares/Third_Party/NimaLTD_Driver/WS28XX/ws28xx.h \
- ../I-CUBE-WS28XX/NimaLTD.I-CUBE-WS28XX_conf.h
+ ../Core/Inc/tim.h ../I-CUBE-WS28XX/NimaLTD.I-CUBE-WS28XX_conf.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -57,4 +57,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 ../Middlewares/Third_Party/NimaLTD_Driver/WS28XX/ws28xx.h:
+../Core/Inc/tim.h:
 ../I-CUBE-WS28XX/NimaLTD.I-CUBE-WS28XX_conf.h:
