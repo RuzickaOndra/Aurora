@@ -4,6 +4,14 @@
 	(generator_version "8.0")
 	(uuid "613ad2be-9e1b-480a-bebd-92b3f4aa981e")
 	(paper "A4")
+	(title_block
+		(title "Mermaid Control Unit")
+		(date "2025-02-04")
+		(rev "A")
+		(company "Aurora Dreams Mermaids")
+		(comment 1 "Designed by: Ondrej Ruzicka")
+		(comment 4 "Hierarchy")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
@@ -1361,7 +1369,7 @@
 		(dnp no)
 		(uuid "0f68c964-e0ee-49a6-892f-59dd8dbc4569")
 		(property "Reference" "TP13"
-			(at 172.72 88.646 90)
+			(at 172.72 88.138 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1429,7 +1437,7 @@
 		(dnp no)
 		(uuid "275c06d3-0998-4f7f-b148-8e1a59c58b49")
 		(property "Reference" "TP5"
-			(at 167.64 88.646 90)
+			(at 167.64 89.408 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1707,7 +1715,7 @@
 		(dnp no)
 		(uuid "7a40584b-bdca-40f7-9467-537a6881e64c")
 		(property "Reference" "TP9"
-			(at 170.18 88.646 90)
+			(at 170.18 89.408 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1842,7 +1850,7 @@
 		(dnp no)
 		(uuid "aa59a1b5-dc4b-43c1-bb0c-0a4636767904")
 		(property "Reference" "TP3"
-			(at 166.37 93.472 90)
+			(at 166.37 94.742 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2259,7 +2267,7 @@
 		(dnp no)
 		(uuid "ef9c6a63-be40-4fe9-8975-d5ab5af917cc")
 		(property "Reference" "TP7"
-			(at 168.91 93.472 90)
+			(at 168.91 94.742 90)
 			(effects
 				(font
 					(size 1.27 1.27)

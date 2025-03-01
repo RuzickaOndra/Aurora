@@ -4,6 +4,14 @@
 	(generator_version "8.0")
 	(uuid "e6f06f22-a77c-40ea-8f43-bfd628133cd4")
 	(paper "A4")
+	(title_block
+		(title "Mermaid Control Unit")
+		(date "2025-02-04")
+		(rev "A")
+		(company "Aurora Dreams Mermaids")
+		(comment 1 "Designed by: Ondrej Ruzicka")
+		(comment 4 "Level Shifters")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers hide)

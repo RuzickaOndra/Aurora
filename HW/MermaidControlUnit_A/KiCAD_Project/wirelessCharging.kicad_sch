@@ -4,6 +4,14 @@
 	(generator_version "8.0")
 	(uuid "204c9ebe-f048-45c8-a722-c375f3b27aa8")
 	(paper "A4")
+	(title_block
+		(title "Mermaid Control Unit")
+		(date "2025-02-04")
+		(rev "A")
+		(company "Aurora Dreams Mermaids")
+		(comment 1 "Designed by: Ondrej Ruzicka")
+		(comment 4 "Wireless Charging")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
