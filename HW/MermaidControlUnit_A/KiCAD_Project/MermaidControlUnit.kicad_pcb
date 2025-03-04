@@ -6959,7 +6959,7 @@
 				)
 			)
 		)
-		(property "Value" "NTC 100k"
+		(property "Value" "NTC 10k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "265dc68a-d71d-45d0-830b-522a3a4ef152")
@@ -7009,7 +7009,7 @@
 				)
 			)
 		)
-		(property "Part Number" "NCU18WF104F6SRB"
+		(property "Part Number" "NTCG163JF103FTDS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20660,7 +20660,7 @@
 				)
 			)
 		)
-		(property "Value" "30k"
+		(property "Value" "62k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "37327590-7059-4a6a-b33b-394c8061ffc5")
@@ -20710,7 +20710,7 @@
 				)
 			)
 		)
-		(property "Part Number" "0603WAF3002T5E "
+		(property "Part Number" "0603WAF6202T5E  "
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36822,7 +36822,7 @@
 				)
 			)
 		)
-		(property "Value" "110R"
+		(property "Value" "3.4k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4efc7460-7e2a-4f4f-908a-45ae47fba1fa")
@@ -36872,7 +36872,7 @@
 				)
 			)
 		)
-		(property "Part Number" "0603WAF1100T5E "
+		(property "Part Number" "0603WAF4301T5E  "
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")

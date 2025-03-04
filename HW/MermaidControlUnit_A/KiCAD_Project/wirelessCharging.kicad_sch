@@ -2391,7 +2391,7 @@
 		)
 		(uuid "b4be9764-d340-47c1-8a13-422b74dbbab2")
 	)
-	(text "TCOLD = -6°C\nTHOT = 100°C"
+	(text "TCOLD = -10°C\nTHOT = 100°C"
 		(exclude_from_sim no)
 		(at 179.07 137.414 0)
 		(effects
@@ -3965,7 +3965,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "NTC 100k"
+		(property "Value" "NTC 10k"
 			(at 163.322 132.334 0)
 			(effects
 				(font
@@ -4001,7 +4001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "NCU18WF104F6SRB"
+		(property "Part Number" "NTCG163JF103FTDS"
 			(at 167.64 128.27 0)
 			(effects
 				(font
@@ -4539,7 +4539,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "30k"
+		(property "Value" "62k"
 			(at 178.308 119.38 0)
 			(effects
 				(font
@@ -4575,7 +4575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "0603WAF3002T5E "
+		(property "Part Number" "0603WAF6202T5E  "
 			(at 176.53 118.11 0)
 			(effects
 				(font
@@ -5277,7 +5277,7 @@
 				)
 			)
 		)
-		(property "Value" "110R"
+		(property "Value" "3.4k"
 			(at 171.45 119.126 0)
 			(effects
 				(font
@@ -5312,7 +5312,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "0603WAF1100T5E "
+		(property "Part Number" "0603WAF4301T5E  "
 			(at 167.64 118.11 0)
 			(effects
 				(font
