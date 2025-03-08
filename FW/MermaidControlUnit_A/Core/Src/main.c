@@ -94,6 +94,7 @@ void GlitteringWavesEffect(WS28XX_HandleTypeDef ws);
 void EnchantedRippleEffect(WS28XX_HandleTypeDef ws);
 void TwinklingGlowEffect(WS28XX_HandleTypeDef ws);
 void CarTurnSignalEffect(WS28XX_HandleTypeDef ws);
+void TestMode(WS28XX_HandleTypeDef ws);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -145,7 +146,7 @@ int main(void)
 	HAL_TIM_Base_Start(&htim1); // IR Receiver timer start
 	__HAL_TIM_SET_COUNTER(&htim1, 0); // IR Receiver timer cnt set
 
-	WS28XX_Init(&string1, &htim2, 72, TIM_CHANNEL_3, 3);
+	WS28XX_Init(&string1, &htim2, 72, TIM_CHANNEL_3, 8);
 	WS28XX_Init(&string4, &htim4, 72, TIM_CHANNEL_2, 3);
 	WS28XX_Init(&string7, &htim2, 72, TIM_CHANNEL_1, 3);
 	WS28XX_Init(&string9, &htim3, 72, TIM_CHANNEL_3, 3);
@@ -163,7 +164,8 @@ int main(void)
 	WS28XX_SetPixel_RGBW_565(&string1, 0, COLOR_RGB565_BLUE, 50); //default init values
 	WS28XX_SetPixel_RGBW_565(&string1, 1, COLOR_RGB565_CRIMSON, 50);
 	WS28XX_SetPixel_RGBW_565(&string1, 2, COLOR_RGB565_ORANGE, 50);
-	WS28XX_Update(&string4);
+	WS28XX_SetPixel_RGBW_565(&string1, 7, COLOR_RGB565_ORANGE, 50);
+	WS28XX_Update(&string1);
 
   /* USER CODE END 2 */
 
@@ -207,6 +209,10 @@ int main(void)
 				animationCode = 5;
 				ledsON = 1;
 				break;
+			case 0xFF6897: // "6"
+				animationCode = 6;
+				ledsON = 1;
+				break;
 			case 0xFF58A7: // "0"
 				animationCode = 0;
 				ledsON = 0;
@@ -244,6 +250,9 @@ int main(void)
 				break;
 			case 5: // "5"
 				CarTurnSignalEffect(string1);
+				break;
+			case 6: // "6"
+				TestMode(string1);
 				break;
 			default:
 				break;
@@ -818,76 +827,78 @@ void outputControl(uint8_t en){
 /* LED EFFECTS */
 
 void setAllBlue(WS28XX_HandleTypeDef ws) {
-	WS28XX_SetPixel_RGBW_565(&ws, 0, COLOR_RGB565_CYAN, 100);
-	WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_CYAN, 100);
-	WS28XX_SetPixel_RGBW_565(&ws, 2, COLOR_RGB565_CYAN, 100);
+	for(int i = 0; i<8; i++){
+	WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_CYAN, 100);
+	}
+
 	WS28XX_Update(&ws);
 }
 
 void turnAllOff(WS28XX_HandleTypeDef ws) {
-	WS28XX_SetPixel_RGBW_565(&ws, 0, COLOR_RGB888_BLACK, 0);
-	WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB888_BLACK, 0);
-	WS28XX_SetPixel_RGBW_565(&ws, 2, COLOR_RGB888_BLACK, 0);
+	for(int i = 0; i<8; i++){
+	WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB888_BLACK, 100);
+	}
 	WS28XX_Update(&ws);
 }
 
 void GlitteringWavesEffect(WS28XX_HandleTypeDef ws) {
-	static uint32_t next_update = 0;
-	static uint8_t brightness[3] = { 100, 120, 140 }; // Initial brightness for each LED
-	static int8_t delta[3] = { 10, -15, 20 }; // Change in brightness for each LED
+	 static uint32_t next_update = 0;
+	    static uint8_t brightness[8] = {100, 120, 140, 160, 180, 200, 220, 240}; // Initial brightness
+	    static int8_t delta[8] = {10, -15, 20, -10, 15, -20, 10, -5}; // Different rates for each LED
 
-	if (HAL_GetTick() >= next_update) {
-		next_update = HAL_GetTick() + 5; // 5ms periodic update
+	    if (HAL_GetTick() >= next_update) {
+	        next_update = HAL_GetTick() + 5; // 5ms periodic update
 
-		for (int i = 0; i < 3; i++) {
-			brightness[i] += delta[i];
-			if (brightness[i] >= 255 || brightness[i] <= 100) {
-				delta[i] = -delta[i]; // Reverse direction at boundaries
-			}
-			WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_CYAN, brightness[i]);
-		}
+	        for (int i = 0; i < 8; i++) {
+	            brightness[i] += delta[i];
+	            if (brightness[i] >= 255 || brightness[i] <= 100) {
+	                delta[i] = -delta[i]; // Reverse direction at limits
+	            }
+	            WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_CYAN, brightness[i]);
+	        }
 		WS28XX_Update(&ws);
 	}
 }
 void EnchantedRippleEffect(WS28XX_HandleTypeDef ws) {
 	static uint32_t next_update = 0;
-	static uint8_t brightness = 0;
-	static int8_t direction = 1; // 1 for increasing, -1 for decreasing
+	    static uint8_t brightness = 0;
+	    static int8_t direction = 1; // 1 for increasing, -1 for decreasing
 
-	if (HAL_GetTick() >= next_update) {
-		next_update = HAL_GetTick() + 5; // 5ms periodic update
+	    if (HAL_GetTick() >= next_update) {
+	        next_update = HAL_GetTick() + 5; // 5ms periodic update
 
-		brightness += 5 * direction;
-		if (brightness >= 255 || brightness <= 0) {
-			direction = -direction; // Reverse at boundaries
-		}
+	        brightness += 5 * direction;
+	        if (brightness >= 255 || brightness <= 0) {
+	            direction = -direction; // Reverse at boundaries
+	        }
 
-		WS28XX_SetPixel_RGBW_565(&ws, 0, COLOR_RGB565_BLUE, brightness);
-		WS28XX_SetPixel_RGBW_565(&ws, 1, COLOR_RGB565_GREEN, brightness / 2);
-		WS28XX_SetPixel_RGBW_565(&ws, 2, COLOR_RGB565_PURPLE, 255 - brightness);
+	        for (int i = 0; i < 8; i++) {
+	            uint8_t adjusted_brightness = (brightness + (i * 32)) % 256; // Creates a wave effect
+	            WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_BLUE, adjusted_brightness);
+	        }
 		WS28XX_Update(&ws);
 
 	}
 }
 void TwinklingGlowEffect(WS28XX_HandleTypeDef ws) {
-	static uint32_t next_update = 0;
-	static uint8_t brightness[3] = { 50, 100, 150 }; // Initial brightness for each LED
-	static int8_t delta[3] = { 5, -3, 4 }; // Change rate for each LED
+	 static uint32_t next_update = 0;
+	    static uint8_t brightness[8] = {50, 100, 150, 200, 120, 180, 60, 90}; // Initial brightness
+	    static int8_t delta[8] = {5, -3, 4, -6, 7, -2, 3, -4}; // Different speed changes
 
-	if (HAL_GetTick() >= next_update) {
-		next_update = HAL_GetTick() + 5; // 5ms periodic update
+	    if (HAL_GetTick() >= next_update) {
+	        next_update = HAL_GetTick() + 5; // 5ms periodic update
 
-		for (int i = 0; i < 3; i++) {
-			brightness[i] += delta[i];
-			if (brightness[i] >= 255 || brightness[i] <= 50) {
-				delta[i] = -delta[i]; // Reverse direction at boundaries
-				// Add randomness for a twinkle effect
-				if (brightness[i] <= 50) {
-					delta[i] = (rand() % 5) + 3; // Randomize twinkle speed
-				}
-			}
-			WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_AQUA, brightness[i]);
-		}
+	        for (int i = 0; i < 8; i++) {
+	            brightness[i] += delta[i];
+	            if (brightness[i] >= 255 || brightness[i] <= 50) {
+	                delta[i] = -delta[i]; // Reverse direction at limits
+	                // Randomize the twinkle speed
+	                if (brightness[i] <= 50) {
+	                    delta[i] = (rand() % 5) + 3;
+	                }
+	            }
+	            WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_AQUA, brightness[i]);
+	        }
 		WS28XX_Update(&ws);
 	}
 }
@@ -901,19 +912,90 @@ void CarTurnSignalEffect(WS28XX_HandleTypeDef ws) {
 
 		if (leds_on) {
 			// Turn off all LEDs
-			for (int i = 0; i < 3; i++) {
+			for (int i = 0; i < 8; i++) {
 				WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_BLACK, 0);
 			}
 			leds_on = false;
 		} else {
 			// Turn on all LEDs with Amber
-			for (int i = 0; i < 3; i++) {
+			for (int i = 0; i < 8; i++) {
 				WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_ORANGE, 255);
 			}
 			leds_on = true;
 		}
 		WS28XX_Update(&ws);
 	}
+}
+
+void TestMode(WS28XX_HandleTypeDef ws) {static uint32_t next_update = 0;
+static int led_index = 0; // Starts at LED 1
+static int color_stage = 0; // 0 = Red, 1 = Green, 2 = Blue, 3 = Off
+static bool all_leds_stage = false; // False = individual LED test, True = all LEDs cycle
+static int all_leds_cycle_count = 0; // Tracks if the all-LED cycle has completed once
+
+if (HAL_GetTick() >= next_update) {
+    if (!all_leds_stage) {
+        next_update = HAL_GetTick() + 100; // 100ms timing for individual LED cycling
+
+        // Turn off all LEDs before updating
+        for (int i = 0; i < 8; i++) {
+            WS28XX_SetPixel_RGBW_565(&ws, i, COLOR_RGB565_BLACK, 0);
+        }
+
+        // Set the current LED to the correct color
+        uint16_t color;
+        switch (color_stage) {
+            case 0: color = COLOR_RGB565_RED; break;
+            case 1: color = COLOR_RGB565_GREEN; break;
+            case 2: color = COLOR_RGB565_BLUE; break;
+            default: color = COLOR_RGB565_BLACK; break;
+        }
+
+        WS28XX_SetPixel_RGBW_565(&ws, led_index, color, 255);
+        WS28XX_Update(&ws);
+
+        // Advance color stage
+        color_stage++;
+        if (color_stage > 3) { // Once Off state is reached, move to next LED
+            color_stage = 0;
+            led_index++;
+        }
+
+        // If all LEDs have been tested, switch to "all LEDs together" phase
+        if (led_index >= 8) {
+            all_leds_stage = true;
+            color_stage = 0;
+            all_leds_cycle_count = 0;
+        }
+    } else {
+        next_update = HAL_GetTick() + 1000; // 1s timing for all-LEDs phase
+
+        // Cycle all LEDs together through Red → Green → Blue
+        uint16_t color;
+        switch (color_stage) {
+            case 0: color = COLOR_RGB565_RED; break;
+            case 1: color = COLOR_RGB565_GREEN; break;
+            case 2: color = COLOR_RGB565_BLUE; break;
+            default: color = COLOR_RGB565_BLACK; break;
+        }
+
+        for (int i = 0; i < 8; i++) {
+            WS28XX_SetPixel_RGBW_565(&ws, i, color, 255);
+        }
+        WS28XX_Update(&ws);
+
+        // Advance global color stage
+        color_stage++;
+        all_leds_cycle_count++;
+
+        // After one full RGB cycle, return to individual LED testing
+        if (all_leds_cycle_count >= 3) {
+            all_leds_stage = false;
+            led_index = 0; // Restart from LED 1
+            color_stage = 0;
+        }
+    }
+}
 }
 
 /* USER CODE END 4 */
